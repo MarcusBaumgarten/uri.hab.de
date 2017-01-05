@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:org="http://www.w3.org/ns/org#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <org:FormalOrganization rdf:about="http://uri.hab.de/instance/organization/habwf">
+    <skos:prefLabel>Herzog August Bibliothek Wolfenbüttel</skos:prefLabel>
+    <foaf:homepage rdf:resource="http://www.hab.de"/>
+    <owl:sameAs rdf:resource="http://d-nb.info/gnd/8989-8"/>
+    <owl:sameAs rdf:resource="http://lobid.org/organisation/DE-23"/>
+    <owl:sameAs rdf:resource="http://ld.zdb-services.de/resource/organisations/DE-23"/>
+    <org:identifier rdf:datatype="http://uri.hab.de/ontology/diglib-types#ISIL">DE-23</org:identifier>
+  </org:FormalOrganization>
+</rdf:RDF>
+         
+         

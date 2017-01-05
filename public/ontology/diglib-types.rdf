@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+  <rdfs:Datatype rdf:about="http://uri.hab.de/ontology/diglib-types#ISIL">
+    <rdfs:label xml:lang="en">International Standard Identifier for Libraries and Related Organisations</rdfs:label>
+    <rdfs:label xml:lang="de">Bibliothekssigel</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/International_Standard_Identifier_for_Libraries_and_Related_Organizations"/>
+    <skos:prefLabel>ISIL</skos:prefLabel>
+  </rdfs:Datatype>
+
+  <rdfs:Datatype rdf:about="http://uri.hab.de/ontology/diglib-types#Iconclass">
+    <rdfs:label xml:lang="en">Iconclass Classification Code</rdfs:label>
+    <rdfs:label xml:lang="de">Iconclass-Klassifikationscode</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Iconclass"/>
+    <skos:prefLabel>ICONCLASS</skos:prefLabel>
+  </rdfs:Datatype>
+
+</rdf:RDF>
