@@ -17,4 +17,18 @@
     <skos:prefLabel>ICONCLASS</skos:prefLabel>
   </rdfs:Datatype>
 
+  <rdfs:Datatype rdf:about="http://uri.hab.de/ontology/diglib-types#VD16">
+    <rdfs:label xml:lang="en">VD16 number</rdfs:label>
+    <rdfs:label xml:lang="de">VD16-Nummer</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://de.wikipedia.org/wiki/VD_16"/>
+    <skos:prefLabel>VD16</skos:prefLabel>
+  </rdfs:Datatype>
+
+  <rdfs:Datatype rdf:about="http://uri.hab.de/ontology/diglib-types#VD17">
+    <rdfs:label xml:lang="en">VD17 number</rdfs:label>
+    <rdfs:label xml:lang="de">VD17-Nummer</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://de.wikipedia.org/wiki/VD_17"/>
+    <skos:prefLabel>VD17</skos:prefLabel>
+  </rdfs:Datatype>
+
 </rdf:RDF>
