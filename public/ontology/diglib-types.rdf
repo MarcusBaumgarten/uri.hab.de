@@ -31,4 +31,10 @@
     <skos:prefLabel>VD17</skos:prefLabel>
   </rdfs:Datatype>
 
+  <rdfs:Datatype rdf:about="http://uri.hab.de/ontology/diglib-types#Shelfmark">
+    <rdfs:label xml:lang="en">Shelfmark</rdfs:label>
+    <rdfs:label xml:lang="de">Signatur</rdfs:label>
+    <skos:prefLabel>HAB Wolfenbüttel</skos:prefLabel>
+  </rdfs:Datatype>
+
 </rdf:RDF>
