@@ -1,0 +1,162 @@
+<rdf:RDF xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:org="http://www.w3.org/ns/org#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+  <skos:ConceptSchema rdf:about="http://uri.hab.de/vocab/sdd-fachgruppen">
+    <skos:prefLabel>Fachgruppen der Sammlung Deutscher Drucke an der Herzog August Bibliothek Wolfenbüttel</skos:prefLabel>
+    <dct:publisher>
+      <org:FormalOrganization rdf:about="http://uri.hab.de/instance/organization/habwf">
+        <skos:prefLabel>Herzog August Bibliothek Wolfenbüttel</skos:prefLabel>
+      </org:FormalOrganization>
+    </dct:publisher>
+    <dct:license>
+      <dct:LicenseDocument rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <skos:prefLabel>CC0 1.0 Universal</skos:prefLabel>
+      </dct:LicenseDocument>
+    </dct:license>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-27</dct:modified>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-04-20</dct:created>
+  </skos:ConceptSchema>
+  <skos:Concept>
+    <skos:notation>01</skos:notation>
+    <skos:prefLabel xml:lang="de">Allgemeines. Wissenschaft, Forschung, Kultur. Biographie, Bibliographie, Buch- u. Bibliothekswesen</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>02</skos:notation>
+    <skos:prefLabel xml:lang="de">Philosophie</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>04</skos:notation>
+    <skos:prefLabel xml:lang="de">Religion, Theologie</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>05</skos:notation>
+    <skos:prefLabel xml:lang="de">Erziehung, Bildung, Pädagogik</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>06</skos:notation>
+    <skos:prefLabel xml:lang="de">Soziologie, Gesellschaft</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>07</skos:notation>
+    <skos:prefLabel xml:lang="de">Politik, Verwaltung, Gesellschaft</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>08</skos:notation>
+    <skos:prefLabel xml:lang="de">Wirtschaft</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>09</skos:notation>
+    <skos:prefLabel xml:lang="de">Recht</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>10</skos:notation>
+    <skos:prefLabel xml:lang="de">Allgemeine Naturwissenschaften</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>11</skos:notation>
+    <skos:prefLabel xml:lang="de">Mathematik</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>13</skos:notation>
+    <skos:prefLabel xml:lang="de">Physik, Astronomie</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>14</skos:notation>
+    <skos:prefLabel xml:lang="de">Chemie, Alchemie</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>15</skos:notation>
+    <skos:prefLabel xml:lang="de">Geowissenschaften, Bergbau</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>16</skos:notation>
+    <skos:prefLabel xml:lang="de">Biologie</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>17</skos:notation>
+    <skos:prefLabel xml:lang="de">Medizin, Tiermedizin</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>18</skos:notation>
+    <skos:prefLabel xml:lang="de">Technik</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>22</skos:notation>
+    <skos:prefLabel xml:lang="de">Land- u. Hauswirtschaft, Forstwesen, Jagd, Fischerei</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>24</skos:notation>
+    <skos:prefLabel xml:lang="de">Architektur, Bildende Kunst, Kunstwissenschaft</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>25</skos:notation>
+    <skos:prefLabel xml:lang="de">Musik, Theater</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>26</skos:notation>
+    <skos:prefLabel xml:lang="de">Festkultur, Spiele</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>27</skos:notation>
+    <skos:prefLabel xml:lang="de">Allgemeine Sprach- und Literaturwissenschaft</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>28</skos:notation>
+    <skos:prefLabel xml:lang="de">Englische Sprache und Literatur</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>29</skos:notation>
+    <skos:prefLabel xml:lang="de">Deutsche u. Neulateinische Sprache und Literatur</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>30</skos:notation>
+    <skos:prefLabel xml:lang="de">Romanische Sprache und Literatur</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>31</skos:notation>
+    <skos:prefLabel xml:lang="de">Klassische Sprache und Literatur</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>33</skos:notation>
+    <skos:prefLabel xml:lang="de">Sonstige Sprachen und Literaturen</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>34</skos:notation>
+    <skos:prefLabel xml:lang="de">Archäologie, Geschichte</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+  <skos:Concept>
+    <skos:notation>35</skos:notation>
+    <skos:prefLabel xml:lang="de">Geographie, Volks- und Völkerkund</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/sdd-fachgruppen"/>
+  </skos:Concept>
+
+</rdf:RDF>
