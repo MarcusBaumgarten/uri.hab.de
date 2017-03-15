@@ -1,0 +1,130 @@
+<rdf:RDF xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:org="http://www.w3.org/ns/org#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <skos:ConceptScheme rdf:about="http://uri.hab.de/vocab/barock">
+    <skos:prefLabel xml:lang="de">Klassifikation der Wolfenbütteler Barockbibliographie</skos:prefLabel>
+    <dct:publisher>
+      <org:FormalOrganization rdf:about="http://uri.hab.de/instance/organization/habwf">
+        <skos:prefLabel>Herzog August Bibliothek Wolfenbüttel</skos:prefLabel>
+      </org:FormalOrganization>
+    </dct:publisher>
+    <dct:license>
+      <dct:LicenseDocument rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <skos:prefLabel>CC0 1.0 Universal</skos:prefLabel>
+      </dct:LicenseDocument>
+    </dct:license>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-15</dct:modified>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-03-14</dct:created>
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b01">
+    <skos:notation>BAROCK 01</skos:notation>
+    <skos:prefLabel xml:lang="de">Bibliographien</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b02">
+    <skos:notation>BAROCK 02</skos:notation>
+    <skos:prefLabel xml:lang="de">Sammelbände</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b03">
+    <skos:notation>BAROCK 03</skos:notation>
+    <skos:prefLabel xml:lang="de">Ausstellungen</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b04">
+    <skos:notation>BAROCK 04</skos:notation>
+    <skos:prefLabel xml:lang="de">Sprachgeschichte</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b05">
+    <skos:notation>BAROCK 05</skos:notation>
+    <skos:prefLabel xml:lang="de">Literaturgeschichte</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b06">
+    <skos:notation>BAROCK 06</skos:notation>
+    <skos:prefLabel xml:lang="de">Buch- und Bibliotheksgeschichte</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b07">
+    <skos:notation>BAROCK 07</skos:notation>
+    <skos:prefLabel xml:lang="de">Theologie- und Kirchengeschichte</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b08">
+    <skos:notation>BAROCK 08</skos:notation>
+    <skos:prefLabel xml:lang="de">Geschichte, Kulturgeschichte</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b09">
+    <skos:notation>BAROCK 09</skos:notation>
+    <skos:prefLabel xml:lang="de">Politik- und Verfassungsgeschichte</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b10">
+    <skos:notation>BAROCK 10</skos:notation>
+    <skos:prefLabel xml:lang="de">Rechtsgeschichte</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b11">
+    <skos:notation>BAROCK 11</skos:notation>
+    <skos:prefLabel xml:lang="de">Wirtschaftsgeschichte, Sozialgeschichte</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b12">
+    <skos:notation>BAROCK 12</skos:notation>
+    <skos:prefLabel xml:lang="de">Stadtgeschichte</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b13">
+    <skos:notation>BAROCK 13</skos:notation>
+    <skos:prefLabel xml:lang="de">Gender Studies</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b14">
+    <skos:notation>BAROCK 14</skos:notation>
+    <skos:prefLabel xml:lang="de">Wissenschafts- und Philosophiegeschichte</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b15">
+    <skos:notation>BAROCK 15</skos:notation>
+    <skos:prefLabel xml:lang="de">Bildungswesen</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b16">
+    <skos:notation>BAROCK 16</skos:notation>
+    <skos:prefLabel xml:lang="de">Naturwissenschaften, Technik</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b17">
+    <skos:notation>BAROCK 17</skos:notation>
+    <skos:prefLabel xml:lang="de">Medizin</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b18">
+    <skos:notation>BAROCK 18</skos:notation>
+    <skos:prefLabel xml:lang="de">Geographie, Kartographie</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b19">
+    <skos:notation>BAROCK 19</skos:notation>
+    <skos:prefLabel xml:lang="de">Kunstgeschichte</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b20">
+    <skos:notation>BAROCK 20</skos:notation>
+    <skos:prefLabel xml:lang="de">Emblematik</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b21">
+    <skos:notation>BAROCK 21</skos:notation>
+    <skos:prefLabel xml:lang="de">Musik, Theater, Fest</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b22">
+    <skos:notation>BAROCK 22</skos:notation>
+    <skos:prefLabel xml:lang="de">Einzelne Personen</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/barock"/>
+  </skos:Concept>
+</rdf:RDF>
