@@ -15,7 +15,7 @@
       </dct:LicenseDocument>
     </dct:license>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-15</dct:modified>
-    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-03-14</dct:created>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-14</dct:created>
   </skos:ConceptScheme>
   <skos:Concept rdf:about="http://uri.hab.de/vocab/barock#b01">
     <skos:notation>BAROCK 01</skos:notation>
