@@ -5,7 +5,7 @@
          xmlns:org="http://www.w3.org/ns/org#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#">
 
-  <dcat:Catalog rdf:about="http://uri.hab.de/catalog">
+  <dcat:Catalog rdf:about="http://uri.hab.de/instance/catalog">
     <dct:title xml:lang="de">Datenkatalog der Herzog Augst Bibliothek Wolfenbüttel</dct:title>
     <dct:publisher>
       <org:FormalOrganization rdf:about="http://uri.hab.de/instance/organization/habwf">
