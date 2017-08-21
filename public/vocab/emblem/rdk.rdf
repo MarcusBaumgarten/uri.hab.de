@@ -1,0 +1,539 @@
+<rdf:RDF xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <skos:ConceptScheme rdf:about="http://uri.hab.de/vocab/emblem/rdk">
+    <skos:prefLabel xml:lang="de">Emblembuchsystematik des Reallexikons zur Deutschen Kunstgeschichte</skos:prefLabel>
+    <dct:publisher>
+      <org:FormalOrganization rdf:about="http://uri.hab.de/instance/organization/habwf">
+        <skos:prefLabel>Herzog August Bibliothek Wolfenbüttel</skos:prefLabel>
+      </org:FormalOrganization>
+    </dct:publisher>
+    <dct:license>
+      <dct:LicenseDocument rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <skos:prefLabel>CC0 1.0 Universal</skos:prefLabel>
+      </dct:LicenseDocument>
+    </dct:license>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-21</dct:modified>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-21</dct:created>
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IA1">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA"/>
+    <skos:notation>I. A. 1</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Individuell: Sammlungen von Impresen.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic Individual: Collections of Impreses or Devices.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IA2a">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA2"/>
+    <skos:notation>I. A. 2 a</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Individuell: Hervorragende Persönlichkeiten: Biblische Personen (außer Christus und Maria; für diese s. &lt;II. A. 2&gt; und &lt;II. A. 3&gt;).</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic Individual: Outstanding Personalities: Biblical Persons.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IA2b">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_53"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA2"/>
+    <skos:notation>I. A. 2 b</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Individuell: Hervorragende Persönlichkeiten: Heilige.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic. Individual: Outstanding Personalities: Saints.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IA2c">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA2d"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA2"/>
+    <skos:notation>I. A. 2 c</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Individuell: Hervorragende Persönlichkeiten: Kirchenfürsten.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic. Individual: Outstanding Personalities: Princes of the Church, Bishops.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IA2d">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_4"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_4"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA2"/>
+    <skos:notation>I. A. 2 d</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Individuell: Hervorragende Persönlichkeiten: Weltliche Herren.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic. Individual: Outstanding Personalities: Secular Leaders and Rulers.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IA3">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_43"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_4"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA"/>
+    <skos:notation>I. A. 3</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Individuell: Einzüge (s. a. Ehrenpforte, RDK IV 1443– 1504, Triumphbogen), Krönungen.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic. Individual: Festivals, Coronations.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IA4">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA"/>
+    <skos:notation>I. A. 4</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Individuell: Theatralisches: Turniere (s. a. Turnierbuch), Ballette usw.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic. Individual: Theatrical: Tournaments, Ballets etc.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IA5">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_42"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_4"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA"/>
+    <skos:notation>I. A. 5</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Individuell: Feste aus familiären Anlässen: Geburten, Taufen, Hochzeiten, Epithalamia.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic. Individual: Celebrations for family events: Births, baptisms, weddings, epithalamia.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IA6">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA"/>
+    <skos:notation>I. A. 6</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Individuell: Exequien, Castrum doloris (s. a. Effigies).</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic. Individual: Exequia, Castrum doloris.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IA7">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_41"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_4"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA"/>
+    <skos:notation>I. A. 7</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Individuell: Politische Allegorie.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic. Individual: Political Allegory.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IA8">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_41"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_4"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA"/>
+    <skos:notation>I. A. 8</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Individuell: Rat an den Fürsten.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic. Individual: Advice to Princes.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IB1">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IB2"/>
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIB"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IB"/>
+    <skos:notation>I. B. 1</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Körperschaftlich: Akademien, Universitäten, Studenten.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic. Collective: Academies, Universities, Student Groups.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IB2">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IB"/>
+    <skos:notation>I. B. 2</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Körperschaftlich: Alba amicorum.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic. Collective: Alba amicorum.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IB3">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IB"/>
+    <skos:notation>I. B. 3</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Körperschaftlich: Gesellschaften.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic. Collective: Societies.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IB4">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_58"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IB"/>
+    <skos:notation>I. B. 4</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Körperschaftlich: Geistliche Gemeinschaften (Orden, Klöster).</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic. Collective: Religious communities (Orders, monasteries).</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IB5">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_6"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IB"/>
+    <skos:notation>I. B. 5</skos:notation>
+    <skos:prefLabel xml:lang="de">Heroisch. Körperschaftlich: Städte(s. a. Stadtansicht, Vedute u. ä.).</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Heroic. Collective: Cities.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIA">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_II"/>
+    <skos:notation>II. A .</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Religiös.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Religious.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIA1">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA2a"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA"/>
+    <skos:notation>II. A. 1</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Religiös: Bibel.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Religious: Bible.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIA2">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA3"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA"/>
+    <skos:notation>II. A. 2</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Religiös: Christus. (s. a. Leben Christi, Passion, Jugend Christi; vgl. ferner RDK III 633– 36).</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Religious: Christ.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIA3">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA9"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_52"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA"/>
+    <skos:notation>II. A. 3</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Religiös: Maria.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Religious: Mary.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIA4">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA"/>
+    <skos:notation>II. A. 4</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Religiös: Messe.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Religious: Mass.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIA5">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIB1"/>
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIB2"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_56"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA"/>
+    <skos:notation>II. A. 5</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Religiös: Perikopen zum Kirchenjahr.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Religious: Pericopes to the church year.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIA6">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA"/>
+    <skos:notation>II. A. 6</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Religiös: Kirche.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Religious: Church.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIA7">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA8"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_58"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA"/>
+    <skos:notation>II. A. 7</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Religiös: Ordensregeln</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Religious: Rules of the order.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIA8">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_52"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA"/>
+    <skos:notation>II. A. 8</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Religiös: Exercitia.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Religious: Exercitia.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIA10">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIB1"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_54"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA"/>
+    <skos:notation>II. A. 10</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Religiös: Herz Jesu, Namen Jesu.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Religious: Heart of Jesus.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIA11">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA7"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_58"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA"/>
+    <skos:notation>II. A. 11</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Religiös: Via recta.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Religious: Via recta.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IA12">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA7"/>
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA8"/>
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA10"/>
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA11"/>
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA13"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_56"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_57"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_59"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA"/>
+    <skos:notation>I. A. 12</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Religiös: Ars moriendi (s.a. die vier letzten Dinge, Totentanz, Memento mori; ferner: Trost- und Erbauungsbücher &lt;II.A.13&gt;)</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Religious: Ars moriendi.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIA13">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_56"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_57"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA"/>
+    <skos:notation>II. A. 13</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Religiös: Trost- und Erbauungsbücher.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Religious: Consolation and devotional books.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIA14">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA5"/>
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIB1a"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_54"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_56"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_57"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_510"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA"/>
+    <skos:notation>II. A. 14</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Religiös: Sonstige religiöse Emblembücher.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Religious: Other religious emblembooks.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIB1">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA10"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_3"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_5"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIB"/>
+    <skos:notation>II. B. 1</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Erotisch: Nichtreligiöse Herzallegorien.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Erotic: Non-religious heart allegories.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIB2">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_3"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_5"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIB"/>
+    <skos:notation>II. B. 2</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Erotisch: Pornogaphica.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Erotic: Pornogaphica.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIB3">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_3"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_5"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIB"/>
+    <skos:notation>II. B. 3</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralisch. Erotisch: Allgemein.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical. Erotic: General.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_6"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_III"/>
+    <skos:notation>III. A</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA1">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_6"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 1</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Der Mensch.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: Human.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA2">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_6"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 2</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Die Sinne.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: Senses.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA3">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_6"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 3</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Die Temperamente.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: Temperaments.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA4">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 4</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Fortuna humanae generis. (Das menschliche Wissen)</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: Fortune and Human Destiny.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA5">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_6"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_2"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 5</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Enzyklopädien, Lehrbücher.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: Encyclopedias, textbooks.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA6">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_2"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_4"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 6</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Kosmographie, Planeten, Elemente.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: Cosmography, planets, elements.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA7">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIA5"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_510"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 7</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Kalender.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: Church Calender, Liturgy</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA8">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_2"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 8</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Geschichte.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: History</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA9">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IB5"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 9</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Geographie.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: Geographie</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA10">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_6"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_2"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 10</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Tiere und Pflanzen (s. a. Tiersymbolik, Pflanzensymbolik sowie die Artikel über einzelne Tiere und Pflanzen).</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: Animals and Plants</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA11">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_2"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 11</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Mythologie.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: Mythological</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA12">
+    <skos:related rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIB1a"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_2"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 12</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Antike Dichter und Denker, Rhetorik.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: Poetry and Rhetoric, Anthologies.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA13">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_2"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 13</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Fabel, Märchen.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic:</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA14">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_2"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 14</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Sprichwörter.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: Proverbs.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA15">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 15</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Alchimie (s. Goldmacherkunst).</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: Alchemy.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA16">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 16</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Kalligaphie (s. a. Schreibmeisterornamentik).</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic.Encyclopedic: Calligraphy.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIA17">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_2"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIA"/>
+    <skos:notation>III. A. 17</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Enzyklopädisch: Musik.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Didactic. Encyclopedic: Music.</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIB1a">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_2"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIB1"/>
+    <skos:notation>III. B. 1 a</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Ikonologisch: "Praxis": rhetorisch.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">"Didactic. Iconological: "Practice": Rhetorical."</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIB1b">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_2"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIB1"/>
+    <skos:notation>III. B. 1 b</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Ikonologisch: "Praxis": künstlerisch.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">"Didactic. Iconological: "Practice": Artistic."</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIB2">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_2"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIB"/>
+    <skos:notation>III. B. 2</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Ikonologisch: "Theorie".</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">"Didactic. Iconological: "Theory". "</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIB2a">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIB2"/>
+    <skos:notation>III. B. 2 a</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Ikonologisch: "Theorie": Impresen.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">"Didactic. Iconological: "Theory": Impreses or Devices."</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIB2b">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIB2"/>
+    <skos:notation>III. B. 2 b</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Ikonologisch: "Theorie": Embleme.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">"Didactic. Iconological: "Theory": Emblems."</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/rdk#id_IIIB2c">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IIIB2"/>
+    <skos:notation>III. B. 2 c</skos:notation>
+    <skos:prefLabel xml:lang="de">Didaktisch. Ikonologisch: "Theorie": Ikonologien.</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">"Didactic. Iconological: "Theory": Iconologies."</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/rdk"/>
+  </skos:Concept>
+</rdf:RDF>

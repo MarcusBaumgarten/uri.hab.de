@@ -1,0 +1,173 @@
+<rdf:RDF xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:org="http://www.w3.org/ns/org#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <skos:ConceptScheme rdf:about="http://uri.hab.de/vocab/emblem/mdz">
+    <skos:prefLabel xml:lang="de">Emblembuchsystematik des Münchner Digitalisierungszentrums</skos:prefLabel>
+    <dct:publisher>
+      <org:FormalOrganization rdf:about="http://uri.hab.de/instance/organization/habwf">
+        <skos:prefLabel>Herzog August Bibliothek Wolfenbüttel</skos:prefLabel>
+      </org:FormalOrganization>
+    </dct:publisher>
+    <dct:license>
+      <dct:LicenseDocument rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <skos:prefLabel>CC0 1.0 Universal</skos:prefLabel>
+      </dct:LicenseDocument>
+    </dct:license>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-21</dct:modified>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-21</dct:created>
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_1">
+    <skos:relatedMatch rdf:resource="http://d-nb.info/gnd/4271362-6"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/rdk#id_IA1"/>
+    <skos:notation>1.</skos:notation>
+    <skos:prefLabel xml:lang="de">Impresenliteratur</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Impreses or devices literature</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_2">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_2"/>
+    <skos:notation>2.</skos:notation>
+    <skos:prefLabel xml:lang="de">Ethisch-moralische Emblematik</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Moral-Ethical Emblematics</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_3">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_5"/>
+    <skos:notation>3.</skos:notation>
+    <skos:prefLabel xml:lang="de">Weltliche Liebesemblematik</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Secular Love Emblematics</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_4">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_4"/>
+    <skos:notation>4.</skos:notation>
+    <skos:prefLabel xml:lang="de">Politische Emblematik</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Political Emblematics</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_41">
+    <skos:relatedMatch rdf:resource="http://d-nb.info/gnd/4018818-8"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_4"/>
+    <skos:notation>4.1</skos:notation>
+    <skos:prefLabel xml:lang="de">Fürstenspiegel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Mirrors for princes</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_42">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_4"/>
+    <skos:notation>4.2</skos:notation>
+    <skos:prefLabel xml:lang="de">Emblemschriften anläßlich von Hochzeiten, Geburten und Tauffeiern</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Emblematic literature for Festivities: Marriage, Birth and Baptism</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_43">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_4"/>
+    <skos:notation>4.3</skos:notation>
+    <skos:prefLabel xml:lang="de">Sonstige emblematische Gratulationsschriften</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Other emblematic congratulatory works</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_44">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_4"/>
+    <skos:notation>4.4</skos:notation>
+    <skos:prefLabel xml:lang="de">Funeral-Emblematik</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Funeral emblematics</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_45">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_4"/>
+    <skos:notation>4.5</skos:notation>
+    <skos:prefLabel xml:lang="de">Sonstige politische Emblematik</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Other political emblematics</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_5">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_1"/>
+    <skos:notation>5.</skos:notation>
+    <skos:prefLabel xml:lang="de">Religiöse Emblematik</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Religious Emblematics</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_51">
+    <skos:relatedMatch rdf:resource="http://d-nb.info/gnd/4123978-7"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:notation>5.1</skos:notation>
+    <skos:prefLabel xml:lang="de">Predigtsammlungen</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Sermon collections</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_52">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:notation>5.2</skos:notation>
+    <skos:prefLabel xml:lang="de">Marienemblematik</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Marian emblematics</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_53">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:notation>5.3</skos:notation>
+    <skos:prefLabel xml:lang="de">Heiligen-Emblematik</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Saint`s emblematics</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_54">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:notation>5.4</skos:notation>
+    <skos:prefLabel xml:lang="de">Religiöse Liebes- und Herzensemblematik</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Divine love and heart-shaped emblems</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_55">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:notation>5.5</skos:notation>
+    <skos:prefLabel xml:lang="de">Emblematisierte Ordensregeln</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Emblematics for the rules of monastic orders</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_56">
+    <skos:relatedMatch rdf:resource="http://d-nb.info/gnd/4129866-4"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:notation>5.6</skos:notation>
+    <skos:prefLabel xml:lang="de">Protestantische Erbauungsliteratur</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Protestant devotional literature</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_57">
+    <skos:relatedMatch rdf:resource="http://d-nb.info/gnd/4129866-4"/>
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:notation>5.7</skos:notation>
+    <skos:prefLabel xml:lang="de">Katholische Erbauungsliteratur</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Catholic devotional literature</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_58">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:notation>5.8</skos:notation>
+    <skos:prefLabel xml:lang="de">Ordensgeschichte</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">History of the monastic orders</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_59">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:notation>5.9</skos:notation>
+    <skos:prefLabel xml:lang="de">Emblematischer Totentanz</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Emblematic dances of death</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_510">
+    <skos:broader rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:notation>5.10</skos:notation>
+    <skos:prefLabel xml:lang="de">Enzyklopädien religiöser Emblematik</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Encyclopedias of religious emblematics</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/mdz#id_6">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_2"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/biel#id_3"/>
+    <skos:notation>6.</skos:notation>
+    <skos:prefLabel xml:lang="de">Emblemenzyklopädien</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Emblem encyclopedias</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/mdz"/>
+  </skos:Concept>
+</rdf:RDF>
