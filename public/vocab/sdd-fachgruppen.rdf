@@ -2,7 +2,7 @@
          xmlns:org="http://www.w3.org/ns/org#"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-  <skos:ConceptSchema rdf:about="http://uri.hab.de/vocab/sdd-fachgruppen">
+  <skos:ConceptScheme rdf:about="http://uri.hab.de/vocab/sdd-fachgruppen">
     <skos:prefLabel>Fachgruppen der Sammlung Deutscher Drucke an der Herzog August Bibliothek Wolfenbüttel</skos:prefLabel>
     <dct:publisher>
       <org:FormalOrganization rdf:about="http://uri.hab.de/instance/organization/habwf">
@@ -16,7 +16,7 @@
     </dct:license>
     <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-10</dct:modified>
     <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-04-20</dct:created>
-  </skos:ConceptSchema>
+  </skos:ConceptScheme>
   <skos:Concept rdf:about="http://uri.hab.de/vocab/sdd-fachgruppen#fg01">
     <skos:notation>01</skos:notation>
     <skos:prefLabel xml:lang="de">Allgemeines. Wissenschaft, Forschung, Kultur. Biographie, Bibliographie, Buch- u. Bibliothekswesen</skos:prefLabel>
