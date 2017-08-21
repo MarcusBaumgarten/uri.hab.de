@@ -1,0 +1,57 @@
+<rdf:RDF xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:org="http://www.w3.org/ns/org#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <skos:ConceptScheme rdf:about="http://uri.hab.de/vocab/emblem/biel">
+    <skos:prefLabel xml:lang="de">Emblembuchsystematik nach Monika Biel</skos:prefLabel>
+    <dct:publisher>
+      <org:FormalOrganization rdf:about="http://uri.hab.de/instance/organization/habwf">
+        <skos:prefLabel>Herzog August Bibliothek Wolfenbüttel</skos:prefLabel>
+      </org:FormalOrganization>
+    </dct:publisher>
+    <dct:license>
+      <dct:LicenseDocument rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <skos:prefLabel>CC0 1.0 Universal</skos:prefLabel>
+      </dct:LicenseDocument>
+    </dct:license>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-21</dct:modified>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-21</dct:created>
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/biel#id_1">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_5"/>
+    <skos:notation>1.</skos:notation>
+    <skos:prefLabel xml:lang="de">Emblemata sacra</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Emblemata sacra</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/biel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/biel#id_2">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_2"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_6"/>
+    <skos:notation>2.</skos:notation>
+    <skos:prefLabel xml:lang="de">Emblemata moralia</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Emblemata moralia</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/biel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/biel#id_3">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_2"/>
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_6"/>
+    <skos:notation>3.</skos:notation>
+    <skos:prefLabel xml:lang="de">Emblemata physica et academica</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Emblemata physica et academica</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/biel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/biel#id_4">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_4"/>
+    <skos:notation>4.</skos:notation>
+    <skos:prefLabel xml:lang="de">Emblemata politica</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Emblemata politica</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/biel"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/emblem/biel#id_5">
+    <skos:relatedMatch rdf:resource="http://uri.hab.de/vocab/emblem/mdz#id_3"/>
+    <skos:notation>5.</skos:notation>
+    <skos:prefLabel xml:lang="de">Amorum emblemata</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Amorum emblemata</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/emblem/biel"/>
+  </skos:Concept>
+</rdf:RDF>
