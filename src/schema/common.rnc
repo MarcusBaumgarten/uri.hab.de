@@ -101,16 +101,6 @@ rdfResource =
    attribute rdf:resource { xsd:anyURI }
 
 rdfPrimarySubject =
-   [
-      s:pattern [
-         s:rule [
-            context = "/rdf:RDF/*" s:assert [
-               test = "matches(@rdf:about, '^http://([^.]+\.)?hab\.de')"
-               "Ein primäres Subject muss unter der Kontrolle der HAB stehen."
-            ]
-         ]
-      ]
-   ]
    attribute rdf:about { xsd:anyURI }
 
 rdfPrimarySubjectEntity = notAllowed
