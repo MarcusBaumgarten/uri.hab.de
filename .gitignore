@@ -1,0 +1,4 @@
+test/schema/xspec/*
+test/schema/*.*
+!test/schema/*.xspec
+!test/schema/.gitignore
