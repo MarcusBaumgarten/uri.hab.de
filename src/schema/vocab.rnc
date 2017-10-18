@@ -41,7 +41,8 @@ skos.inScheme =
       s:pattern [
          s:rule [
             context = "/rdf:RDF/skos:Concept/skos:inScheme" s:assert [
-               test = "not(empty(/rdf:RDF/skos:ConceptScheme/@rdf:about = current()/@rdf:resource))"
+               test = "/rdf:RDF/skos:ConceptScheme/@rdf:about = current()/@rdf:resource"
+               id = "skos.inScheme_001"
                "Das Konzept muss zu einem Ordnungssystem gehören, dass in dieser Datei definiert ist."
             ]
          ]
