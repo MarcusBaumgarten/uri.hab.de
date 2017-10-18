@@ -53,7 +53,8 @@ internalEntity =
       s:pattern [
          s:rule [
             context = "*[@rdf:about]" s:assert [
-               test = "matches(@rdf:about, '^http://([^.]+\.)?hab\.de')"
+               test = "matches(@rdf:about, '^http://([^.]+\.)?hab\.de(/.*)?$')"
+               id = "internalEntity_001"
                "Verwende <owl:sameAs> für Statements zu Entitäten, die nicht unter der Kontrolle der HAB liegen."
             ]
          ]
@@ -67,7 +68,8 @@ externalEntity =
       s:pattern [
          s:rule [
             context = "owl:sameAs" s:assert [
-               test = "not(matches(@rdf:resource, '^http://([^.]+\.)?hab\.de'))"
+               test = "not(matches(@rdf:resource, '^http://([^.]+\.)?hab\.de(/.*)?$'))"
+               id = "externalEntity_001"
                "Verwende @rdf:about für Statements zu Entitäten, die unter der Kontroller der HAB liegen."
             ]
          ]
