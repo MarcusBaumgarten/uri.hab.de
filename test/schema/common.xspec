@@ -1,0 +1,35 @@
+<xspec:description xmlns:xspec="http://www.jenitennison.com/xslt/xspec" schematron="common.sch">
+
+  <xspec:scenario label="Verwende &lt;owl:sameAs&gt; für Statements zu Entitäten, die nicht unter der Kontrolle der HAB liegen">
+    <xspec:scenario label="Regel trifft zu">
+      <xspec:context xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <Entity rdf:about="http://example.hab.de/entity"/>
+      </xspec:context>
+      <xspec:expect-not-assert id="internalEntity_001"/>
+    </xspec:scenario>
+    <xspec:scenario label="Regel nicht trifft zu">
+      <xspec:context xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <Entity rdf:about="http://hab.example.de/entity"/>
+      </xspec:context>
+      <xspec:expect-assert id="internalEntity_001"/>
+    </xspec:scenario>
+  </xspec:scenario>
+
+  <xspec:scenario label="Verwende @rdf:about für Statements zu Entitäten, die unter der Kontrolle der HAB liegen">
+    <xspec:scenario label="Regel trifft zu">
+      <xspec:context xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <Entity rdf:about="http://example.hab.de/entity"/>
+      </xspec:context>
+      <xspec:expect-not-assert id="externalEntity_001"/>
+    </xspec:scenario>
+    <xspec:scenario label="Regel nicht trifft zu">
+      <xspec:context xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <Entity xmlns:owl="http://www.w3.org/2002/07/owl#">
+          <owl:sameAs rdf:resource="http://example.hab.de/entity"/>
+        </Entity>
+      </xspec:context>
+      <xspec:expect-assert id="externalEntity_001"/>
+    </xspec:scenario>
+  </xspec:scenario>
+
+</xspec:description>

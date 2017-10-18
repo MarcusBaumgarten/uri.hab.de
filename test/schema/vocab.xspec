@@ -1,0 +1,26 @@
+<xspec:description xmlns:xspec="http://www.jenitennison.com/xslt/xspec" schematron="vocab.sch">
+  <xspec:scenario label="Das Konzept muss zu einem Ordnungssystem gehören, dass in der Vokabulardatei definiert ist.">
+    <xspec:scenario label="Regel trifft zu">
+      <xspec:context xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+        <rdf:RDF>
+          <skos:ConceptScheme rdf:about="http://example.hab.de/scheme"/>
+          <skos:Concept>
+            <skos:inScheme rdf:resource="http://example.hab.de/scheme"/>
+          </skos:Concept>
+        </rdf:RDF>
+      </xspec:context>
+      <xspec:expect-not-assert id="skos.inScheme_001"/>
+    </xspec:scenario>
+    <xspec:scenario label="Regel trifft nicht zu">
+      <xspec:context xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+        <rdf:RDF>
+          <skos:ConceptScheme rdf:about="http://example.hab.de/scheme"/>
+          <skos:Concept>
+            <skos:inScheme rdf:resource="http://example.hab.de/other"/>
+          </skos:Concept>
+        </rdf:RDF>
+      </xspec:context>
+      <xspec:expect-assert id="skos.inScheme_001"/>
+    </xspec:scenario>
+  </xspec:scenario>
+</xspec:description>
