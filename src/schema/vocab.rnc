@@ -1,0 +1,58 @@
+# -*- mode: rnc; -*-
+#
+
+namespace skos = "http://www.w3.org/2004/02/skos/core#"
+namespace s    = "http://purl.oclc.org/dsdl/schematron"
+
+include "common.rnc" {
+   rdfPrimarySubjectEntity =
+      skos.ConceptScheme
+    & skos.Concept+
+}
+
+skos.ConceptScheme =
+   element skos:ConceptScheme {
+      rdfPrimarySubject
+    & requiredMetadata
+    & Label+
+    & empty
+   }
+
+skos.Concept =
+   element skos:Concept {
+      rdfPrimarySubject
+    & Label+
+    & skos.notation
+    & skos.inScheme
+    & skos.match
+    & empty
+   }
+
+skos.notation =
+   element skos:notation { text }
+
+skos.inScheme =
+   [
+      s:pattern [
+         s:rule [
+            context = "/rdf:RDF/skos:Concept/skos:inScheme" s:assert [
+               test = "not(empty(/rdf:RDF/skos:ConceptScheme/@rdf:about = current()/@rdf:resource))"
+               "Das Konzept muss zu einem Ordnungssystem gehören, dass in dieser Datei definiert ist."
+            ]
+         ]
+      ]
+   ]
+   element skos:inScheme {
+      rdfResource
+   }
+
+skos.match =
+   element skos:relatedMatch {
+      rdfResource
+   }*
+ & element skos:broader {
+      rdfResource
+   }*
+ & element skos:related {
+    rdfResource
+ }*
