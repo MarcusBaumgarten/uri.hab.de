@@ -21,12 +21,12 @@ start = rdfWrapper
 optionalMetadata =
    element dct:subject { Concept }*
  & element dct:issued { Datestamp }?
+ & element dct:creator { Agent }*
+ & element dct:description { rdfLiteral }*
+ & element dct:title { rdfLiteral }*
 
 requiredMetadata =
-   element dct:title { rdfLiteral }+
- & element dct:description { rdfLiteral }+
- & element dct:creator { Agent }+
- & element dct:publisher { Agent }
+   element dct:publisher { Agent }
  & element dct:created { Datestamp }
  & element dct:modified { Datestamp }
  & element dct:license { License }
