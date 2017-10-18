@@ -4,6 +4,11 @@
 namespace skos = "http://www.w3.org/2004/02/skos/core#"
 namespace s    = "http://purl.oclc.org/dsdl/schematron"
 
+[
+   s:ns [ prefix = "rdf"  uri = "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ]
+   s:ns [ prefix = "skos" uri = "http://www.w3.org/2004/02/skos/core#" ]
+]
+
 include "common.rnc" {
    rdfPrimarySubjectEntity =
       skos.ConceptScheme
