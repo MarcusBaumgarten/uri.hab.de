@@ -1,0 +1,29 @@
+# -*- mode: rnc; -*-
+#
+# Author: David Maus <maus@hab.de>
+#
+
+namespace void = "http://rdfs.org/ns/void#"
+
+include "common.rnc" {
+   optionalMetadata &=
+      element void:exampleResource { rdfResource }*
+    & element void:uriSpace { text }?
+    & element void:vocabulary { rdfResource }*
+    & element void:triples { xsd:integer }?
+    & element void:entities { xsd:integer }?
+
+   requiredMetadata &=
+      element void:feature { rdfResource }+
+    & element void:dataDump { rdfResource }+
+
+   rdfPrimarySubjectEntity = void.Dataset+
+}
+
+void.Dataset =
+   element void:Dataset {
+      rdfPrimarySubject
+    & requiredMetadata
+    & optionalMetadata
+    & empty
+   }

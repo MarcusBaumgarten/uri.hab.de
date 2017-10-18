@@ -1,0 +1,119 @@
+# -*- mode: rnc; -*-
+#
+# Author: David Maus <maus@hab.de>
+#
+
+namespace dct  = "http://purl.org/dc/terms/"
+namespace foaf = "http://xmlns.com/foaf/0.1/"
+namespace owl  = "http://www.w3.org/2002/07/owl#"
+namespace rdf  = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+namespace skos = "http://www.w3.org/2004/02/skos/core#"
+
+namespace s = "http://purl.oclc.org/dsdl/schematron"
+
+[
+   s:ns [ prefix = "rdf" uri = "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ]
+   s:ns [ prefix = "owl" uri = "http://www.w3.org/2002/07/owl#" ]
+]
+
+start = rdfWrapper
+
+optionalMetadata =
+   element dct:subject { Concept }*
+ & element dct:issued { Datestamp }?
+
+requiredMetadata =
+   element dct:title { rdfLiteral }+
+ & element dct:description { rdfLiteral }+
+ & element dct:creator { Agent }+
+ & element dct:publisher { Agent }
+ & element dct:created { Datestamp }
+ & element dct:modified { Datestamp }
+ & element dct:license { License }
+
+rdfLiteral =
+   attribute xml:lang { xsd:language }?
+ & text
+
+Agent =
+   ( Organization | Person )
+
+Organization =
+   element foaf:Organization {
+      ( internalEntity | externalEntity )
+   }
+
+Person =
+   element foaf:Person {
+      ( internalEntity | externalEntity )
+   }
+
+internalEntity =
+   [
+      s:pattern [
+         s:rule [
+            context = "*[@rdf:about]" s:assert [
+               test = "matches(@rdf:about, '^http://([^.]+\.)?hab\.de')"
+               "Verwende <owl:sameAs> für Statements zu Entitäten, die nicht unter der Kontrolle der HAB liegen."
+            ]
+         ]
+      ]
+   ]
+   attribute rdf:about { xsd:anyURI },
+   Label+
+
+externalEntity =
+   [
+      s:pattern [
+         s:rule [
+            context = "owl:sameAs" s:assert [
+               test = "not(matches(@rdf:resource, '^http://([^.]+\.)?hab\.de'))"
+               "Verwende @rdf:about für Statements zu Entitäten, die unter der Kontroller der HAB liegen."
+            ]
+         ]
+      ]
+   ]
+   element owl:sameAs {
+      attribute rdf:resource { xsd:anyURI }
+   }
+ & Label+
+
+Label =
+   element skos:prefLabel { rdfLiteral }
+
+Datestamp =
+   attribute rdf:datatype { "http://www.w3.org/2001/XMLSchema#date" }
+ & xsd:date
+
+License =
+   element dct:LicenseDocument {
+      ( internalEntity | externalEntity )
+   }
+
+Concept =
+   element skos:Concept {
+      ( internalEntity | externalEntity )
+   }
+
+rdfResource =
+   attribute rdf:resource { xsd:anyURI }
+
+rdfPrimarySubject =
+   [
+      s:pattern [
+         s:rule [
+            context = "/rdf:RDF/*" s:assert [
+               test = "matches(@rdf:about, '^http://([^.]+\.)?hab\.de')"
+               "Ein primäres Subject muss unter der Kontrolle der HAB stehen."
+            ]
+         ]
+      ]
+   ]
+   attribute rdf:about { xsd:anyURI }
+
+rdfPrimarySubjectEntity = notAllowed
+
+rdfWrapper =
+   element rdf:RDF {
+      rdfPrimarySubjectEntity
+   }
