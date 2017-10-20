@@ -32,4 +32,21 @@
     </xspec:scenario>
   </xspec:scenario>
 
+  <xspec:scenario label="Verwende immer vollständige URIs für Subjekte oder Referenzen">
+    <xspec:scenario label="Regel trifft zu">
+      <xspec:context xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <Entity rdf:about="http://example.hab.de/entity"/>
+      </xspec:context>
+      <xspec:expect-not-assert id="general_001"/>
+    </xspec:scenario>
+    <xspec:scenario label="Regel nicht trifft zu">
+      <xspec:context xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <Entity>
+          <Property rdf:resource="property"/>
+        </Entity>
+      </xspec:context>
+      <xspec:expect-assert id="general_001"/>
+    </xspec:scenario>
+  </xspec:scenario>
+
 </xspec:description>

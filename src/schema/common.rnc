@@ -14,6 +14,16 @@ namespace s = "http://purl.oclc.org/dsdl/schematron"
 [
    s:ns [ prefix = "rdf" uri = "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ]
    s:ns [ prefix = "owl" uri = "http://www.w3.org/2002/07/owl#" ]
+
+   s:pattern [
+      s:rule [
+         context = "@rdf:about | @rdf:resource" s:assert [
+            test = "matches(., '^https?://')"
+            id = "general_001"
+            "Verwende immer vollständige URIs für Subjekte oder Referenzen"
+         ]
+      ]
+   ]
 ]
 
 start = rdfWrapper
