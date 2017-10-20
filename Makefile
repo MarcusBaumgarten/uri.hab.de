@@ -24,5 +24,7 @@ clean:
 	$(RM) test/schema/*.rnc
 	$(RM) test/schema/*.rng
 	$(RM) test/schema/*.sch
+	$(RM) test/schema/*-compiled.xspec
+	$(RM) -r test/scheme/xspec
 
 copy-schema: test/schema/common.rnc test/schema/vocab.rnc
