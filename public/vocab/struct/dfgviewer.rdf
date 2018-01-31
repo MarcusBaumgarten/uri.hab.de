@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dct="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <skos:ConceptScheme rdf:about="http://uri.hab.de/vocab/struct/dfgviewer">
+    <skos:prefLabel xml:lang="de">Strukturdatenset des DFG-Viewer</skos:prefLabel>
+    <dct:publisher>
+      <foaf:Organization rdf:about="http://uri.hab.de/instance/organization/habwf">
+        <skos:prefLabel>Herzog August Bibliothek Wolfenbüttel</skos:prefLabel>
+      </foaf:Organization>
+    </dct:publisher>
+    <dct:license>
+      <dct:LicenseDocument>
+        <owl:sameAs rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+        <skos:prefLabel>CC0 1.0 Universal</skos:prefLabel>
+      </dct:LicenseDocument>
+    </dct:license>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-31</dct:modified>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-31</dct:created>
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0001">
+    <skos:prefLabel xml:lang="de">Beilage</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">additional</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0002">
+    <skos:prefLabel xml:lang="de">Anrede</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">address</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0003">
+    <skos:prefLabel xml:lang="de">Annotation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">annotation</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0004">
+    <skos:prefLabel xml:lang="de">Artikel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">article</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0005">
+    <skos:prefLabel xml:lang="de">Bachelorarbeit</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">bachelor thesis</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0006">
+    <skos:prefLabel xml:lang="de">Einband</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">binding</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0007">
+    <skos:prefLabel xml:lang="de">Exlibris</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">bookplate</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0008">
+    <skos:prefLabel xml:lang="de">Kapitel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">chapter</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0009">
+    <skos:prefLabel xml:lang="de">Bogensignatur</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">collation</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0010">
+    <skos:prefLabel xml:lang="de">Kolophon</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">colophon</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0011">
+    <skos:prefLabel xml:lang="de">Beigefügtes oder Enthaltenes Werk</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">contained work</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0012">
+    <skos:prefLabel xml:lang="de">Inhaltsverzeichnis</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">table of contents</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0013">
+    <skos:prefLabel xml:lang="de">Errata</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">corrigenda</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0014">
+    <skos:prefLabel xml:lang="de">Deckel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">cover</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0015">
+    <skos:prefLabel xml:lang="de">Rückdeckel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">back cover</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0016">
+    <skos:prefLabel xml:lang="de">Vorderdeckel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">front cover</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0017">
+    <skos:prefLabel xml:lang="de">Tag</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">day</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0018">
+    <skos:prefLabel xml:lang="de">Widmung</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">dedication</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0019">
+    <skos:prefLabel xml:lang="de">Diplomarbeit</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">diploma thesis</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0020">
+    <skos:prefLabel xml:lang="de">Dissertation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">doctoral thesis</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0021">
+    <skos:prefLabel xml:lang="de">Schnitt</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">edge</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0022">
+    <skos:prefLabel xml:lang="de">Vorsatz</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">endsheet</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0023">
+    <skos:prefLabel xml:lang="de">Kupfertitel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">engraved titlepage</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0024">
+    <skos:prefLabel xml:lang="de">Eintrag</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">entry</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0025">
+    <skos:prefLabel xml:lang="de">Faszikel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">fascicle</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0026">
+    <skos:prefLabel xml:lang="de">Fragment</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">fragment</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0027">
+    <skos:prefLabel xml:lang="de">Habilitation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">habilitation thesis</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0028">
+    <skos:prefLabel xml:lang="de">Illustration</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">illustration</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0029">
+    <skos:prefLabel xml:lang="de">Impressum</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">imprint</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0030">
+    <skos:prefLabel xml:lang="de">Register</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">index</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0031">
+    <skos:prefLabel xml:lang="de">Initialschmuck</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">initial decoration</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0032">
+    <skos:prefLabel xml:lang="de">Ausgabe</skos:prefLabel>
+    <skos:altLabel xml:lang="de">Heft</skos:altLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+    <skos:prefLabel xml:lang="en">issue</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0033">
+    <skos:prefLabel xml:lang="de">Vorlesung</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">lecture</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0034">
+    <skos:prefLabel xml:lang="de">Brief</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">letter</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0035">
+    <skos:prefLabel xml:lang="de">Magisterarbeit</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">magister thesis</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0036">
+    <skos:prefLabel xml:lang="de">Handschrift</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">manuscript</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0037">
+    <skos:prefLabel xml:lang="de">Karte</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">map</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0038">
+    <skos:prefLabel xml:lang="de">Masterarbeit</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">master thesis</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0039">
+    <skos:prefLabel xml:lang="de">Monographie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">monograph</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0040">
+    <skos:prefLabel xml:lang="de">Monat</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">month</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0041">
+    <skos:prefLabel xml:lang="de">Mehrbändiges Werk</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">multivolume work</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0042">
+    <skos:prefLabel xml:lang="de">Musiknotation</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">musical notation</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0043">
+    <skos:prefLabel xml:lang="de">Zeitung</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">newspaper</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0044">
+    <skos:prefLabel xml:lang="de">Buchschmuck</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">ornament</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0045">
+    <skos:prefLabel xml:lang="de">Vortrag</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">paper</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0046">
+    <skos:prefLabel xml:lang="de">Spiegel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">paste down</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0047">
+    <skos:prefLabel xml:lang="de">Periodica</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">periodical</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0048">
+    <skos:prefLabel xml:lang="de">Vorwort</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">preface</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0049">
+    <skos:prefLabel xml:lang="de">Vorabdruck</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">preprint</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0050">
+    <skos:prefLabel xml:lang="de">Druckermarke</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">printers mark</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0051">
+    <skos:prefLabel xml:lang="de">Privilegien</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">privileges</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0052">
+    <skos:prefLabel xml:lang="de">Tagungsband</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">proceeding</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0053">
+    <skos:prefLabel xml:lang="de">Besitznachweis</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">provenance</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0054">
+    <skos:prefLabel xml:lang="de">Bericht</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">report</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0055">
+    <skos:prefLabel xml:lang="de">Forschungsarbeit</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">research paper</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0056">
+    <skos:prefLabel xml:lang="de">Schema</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">scheme</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0057">
+    <skos:prefLabel xml:lang="de">Abschnitt</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">section</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0058">
+    <skos:prefLabel xml:lang="de">Rücken</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">spine</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0059">
+    <skos:prefLabel xml:lang="de">Stempel</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">stamp</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0060">
+    <skos:prefLabel xml:lang="de">Studie</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">study</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0061">
+    <skos:prefLabel xml:lang="de">Tabelle</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">table</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0062">
+    <skos:prefLabel xml:lang="de">Text</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">text</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0063">
+    <skos:prefLabel xml:lang="de">Titelblatt</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">title page</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0064">
+    <skos:prefLabel xml:lang="de">Verse</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">verse</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0065">
+    <skos:prefLabel xml:lang="de">Band</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">volume</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/dfgviewer#C0066">
+    <skos:prefLabel xml:lang="de">Jahr</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">year</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/dfgviewer"/>
+  </skos:Concept>
+</rdf:RDF>
