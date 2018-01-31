@@ -27,6 +27,7 @@ skos.Concept =
    element skos:Concept {
       rdfPrimarySubject
     & Label+
+    & skos.altLabel*
     & skos.notation?
     & skos.inScheme
     & skos.match
@@ -62,3 +63,8 @@ skos.match =
  & element skos:related {
     rdfResource
  }*
+
+skos.altLabel = element skos:altLabel {
+   attribute xml:lang { xsd:language }?,
+   text
+}
