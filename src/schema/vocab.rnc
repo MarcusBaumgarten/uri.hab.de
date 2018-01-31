@@ -27,7 +27,7 @@ skos.Concept =
    element skos:Concept {
       rdfPrimarySubject
     & Label+
-    & skos.notation
+    & skos.notation?
     & skos.inScheme
     & skos.match
     & empty
