@@ -2,6 +2,7 @@ TRANG := trang.cmd
 JING  := jing.cmd
 SAXON := transform.cmd
 XSPEC := xspec.cmd
+XPROC := calabash.cmd
 COPY  := cp
 RM    := rm -f
 
@@ -18,6 +19,10 @@ test/schema/%.rnc: src/schema/%.rnc
 test: copy-schema test/schema/common.sch test/schema/common.xspec test/schema/vocab.sch test/schema/vocab.xspec
 	$(XSPEC) -s test/schema/common.xspec
 	$(XSPEC) -s test/schema/vocab.xspec
+
+.PHONY: validate
+validate:
+	$(XPROC) src/xproc/validate-rdfxml.xpl
 
 .PHONY: clean
 clean:
