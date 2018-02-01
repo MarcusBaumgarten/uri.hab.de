@@ -63,6 +63,9 @@ skos.match =
  & element skos:related {
     rdfResource
  }*
+ & element skos:closeMatch {
+    rdfResource
+ }*
 
 skos.altLabel = element skos:altLabel {
    attribute xml:lang { xsd:language }?,
