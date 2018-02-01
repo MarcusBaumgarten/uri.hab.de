@@ -241,4 +241,8 @@
     <skos:prefLabel xml:lang="de">Titel</skos:prefLabel>
     <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/diglib"/>
   </skos:Concept>
+  <skos:Concept rdf:about="http://uri.hab.de/vocab/struct/diglib#P0013">
+    <skos:prefLabel xml:lang="de">Normalisierte Signatur</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://uri.hab.de/vocab/struct/diglib"/>
+  </skos:Concept>
 </rdf:RDF>
