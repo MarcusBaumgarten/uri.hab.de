@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+  <rdf:Description rdf:about="http://uri.hab.de/ontology/diglib-struct">
+    <rdfs:label xml:lang="de">Strukturdaten der Wolfenbütteler Digitalen Bibliothek</rdfs:label>
+    <dct:publisher>
+      <foaf:Organization rdf:about="http://uri.hab.de/instance/organization/habwf">
+        <rdfs:label>Herzog August Bibliothek Wolfenbüttel</rdfs:label>
+      </foaf:Organization>
+    </dct:publisher>
+    <dct:license>
+      <dct:LicenseDocument>
+        <owl:sameAs rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+        <rdfs:label>CC0 1.0 Universal</rdfs:label>
+      </dct:LicenseDocument>
+    </dct:license>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-01</dct:modified>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-31</dct:created>
+  </rdf:Description>
+
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0005">
+    <rdfs:label xml:lang="de">Enthaltenes Werk</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0006">
+    <rdfs:label xml:lang="de">Abschnitt</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0057"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0007">
+    <rdfs:label xml:lang="de">Anrede</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0002"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0008">
+    <rdfs:label xml:lang="de">Beilage</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0001"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0009">
+    <rdfs:label xml:lang="de">Deckel</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0014"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0010">
+    <rdfs:label xml:lang="de">Druckermarke</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0050"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0011">
+    <rdfs:label xml:lang="de">Einband</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0006"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0012">
+    <rdfs:label xml:lang="de">Einleitung</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0013">
+    <rdfs:label xml:lang="de">Errata</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0013"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0014">
+    <rdfs:label xml:lang="de">Exlibris</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0007"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0015">
+    <rdfs:label xml:lang="de">Frontispiz</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0016">
+    <rdfs:label xml:lang="de">hs.Anmerkung</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0017">
+    <rdfs:label xml:lang="de">hs.Widmung</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0018">
+    <rdfs:label xml:lang="de">Illustration</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0028"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0019">
+    <rdfs:label xml:lang="de">Inhaltsverzeichnis</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0012"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0020">
+    <rdfs:label xml:lang="de">Kapitel</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0008"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0021">
+    <rdfs:label xml:lang="de">Karte</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0037"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0022">
+    <rdfs:label xml:lang="de">Kolophon</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0010"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0023">
+    <rdfs:label xml:lang="de">Kupfertitel</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0023"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0024">
+    <rdfs:label xml:lang="de">Noten</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0042"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0025">
+    <rdfs:label xml:lang="de">Ornament</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0026">
+    <rdfs:label xml:lang="de">Privileg</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0051"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0027">
+    <rdfs:label xml:lang="de">Provenienz</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0028">
+    <rdfs:label xml:lang="de">Register</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0030"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0029">
+    <rdfs:label xml:lang="de">Spiegel</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0046"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0030">
+    <rdfs:label xml:lang="de">Stempel</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0059"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0031">
+    <rdfs:label xml:lang="de">Tabelle</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0061"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0032">
+    <rdfs:label xml:lang="de">Titelblatt</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0063"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0033">
+    <rdfs:label xml:lang="de">Verse</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0064"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0034">
+    <rdfs:label xml:lang="de">Vorsatz</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0022"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0035">
+    <rdfs:label xml:lang="de">Vorwort</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0048"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0036">
+    <rdfs:label xml:lang="de">Widmung</rdfs:label>
+    <skos:closeMatch rdf:resource="http://uri.hab.de/vocab/dfg-viewer#C0018"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0037">
+    <rdfs:label xml:lang="de">Zensur</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#C0038">
+    <rdfs:label xml:lang="de">Titelei</rdfs:label>
+  </rdfs:Class>
+  <rdfs:Property rdf:about="http://uri.hab.de/ontology/diglib-struct#P0011">
+    <rdfs:label xml:lang="de">Kommentar</rdfs:label>
+  </rdfs:Property>
+  <rdfs:Property rdf:about="http://uri.hab.de/ontology/diglib-struct#P0012">
+    <rdfs:label xml:lang="de">Titel</rdfs:label>
+  </rdfs:Property>
+  <rdfs:Property rdf:about="http://uri.hab.de/ontology/diglib-struct#P0013">
+    <rdfs:label xml:lang="de">Normalisierte Signatur</rdfs:label>
+  </rdfs:Property>
+</rdf:RDF>
