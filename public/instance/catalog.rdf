@@ -14,7 +14,8 @@
       </org:FormalOrganization>
     </dct:publisher>
     <dct:license>
-      <dct:LicenseDocument rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+      <dct:LicenseDocument>
+        <owl:sameAs rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
         <skos:prefLabel>CC0 1.0 Universal</skos:prefLabel>
       </dct:LicenseDocument>
     </dct:license>
