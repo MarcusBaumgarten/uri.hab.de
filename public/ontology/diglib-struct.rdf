@@ -19,7 +19,7 @@
         <rdfs:label>CC0 1.0 Universal</rdfs:label>
       </dct:LicenseDocument>
     </dct:license>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-01</dct:modified>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-20</dct:modified>
     <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-31</dct:created>
   </rdf:Description>
 
@@ -153,10 +153,14 @@
   <rdfs:Property rdf:about="http://uri.hab.de/ontology/diglib-struct#P0011">
     <rdfs:label xml:lang="de">Kommentar</rdfs:label>
   </rdfs:Property>
-  <rdfs:Property rdf:about="http://uri.hab.de/ontology/diglib-struct#P0012">
+  <owl:DeprecatedProperty rdf:about="http://uri.hab.de/ontology/diglib-struct#P0012">
     <rdfs:label xml:lang="de">Titel</rdfs:label>
-  </rdfs:Property>
+    <rdfs:comment xml:lang="de">Der Titel einer Struktureinheit ist ein magischer Name.</rdfs:comment>
+  </owl:DeprecatedProperty>
   <rdfs:Property rdf:about="http://uri.hab.de/ontology/diglib-struct#P0013">
     <rdfs:label xml:lang="de">Normalisierte Signatur</rdfs:label>
+  </rdfs:Property>
+  <rdfs:Property rdf:about="http://uri.hab.de/ontology/diglib-struct#TitleDocMain">
+    <rdfs:label xml:lang="de">Titel</rdfs:label>
   </rdfs:Property>
 </rdf:RDF>
