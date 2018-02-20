@@ -155,13 +155,20 @@
   </rdfs:Property>
   <owl:DeprecatedProperty rdf:about="http://uri.hab.de/ontology/diglib-struct#P0012">
     <rdfs:label xml:lang="de">Titel</rdfs:label>
-    <rdfs:comment xml:lang="de">Der Titel einer Struktureinheit ist ein magischer Name.</rdfs:comment>
+    <rdfs:comment xml:lang="de">
+      Der Titel einer Struktureinheit ist ein magischer Name, der in das @LABEL-Attribut einer Struktureinheit
+      geschrieben und nicht als gesondertes Metadatum exportiert wird.
+    </rdfs:comment>
   </owl:DeprecatedProperty>
   <rdfs:Property rdf:about="http://uri.hab.de/ontology/diglib-struct#P0013">
     <rdfs:label xml:lang="de">Normalisierte Signatur</rdfs:label>
   </rdfs:Property>
   <rdfs:Property rdf:about="http://uri.hab.de/ontology/diglib-struct#TitleDocMain">
     <rdfs:label xml:lang="de">Titel</rdfs:label>
+    <rdfs:comment xml:lang="de">
+      Der Titel einer Struktureinheit ist ein magischer Name, der in das @LABEL-Attribut einer Struktureinheit
+      geschrieben und nicht als gesondertes Metadatum exportiert wird.
+    </rdfs:comment>
   </rdfs:Property>
   <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#page">
     <rdfs:label xml:lang="de">Seite</rdfs:label>
