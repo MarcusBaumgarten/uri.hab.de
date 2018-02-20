@@ -163,10 +163,10 @@
   <rdfs:Property rdf:about="http://uri.hab.de/ontology/diglib-struct#TitleDocMain">
     <rdfs:label xml:lang="de">Titel</rdfs:label>
   </rdfs:Property>
-  <rdfs:Property rdf:about="http://uri.hab.de/ontology/diglib-struct#page">
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#page">
     <rdfs:label xml:lang="de">Seite</rdfs:label>
-  </rdfs:Property>
-  <rdfs:Property rdf:about="http://uri.hab.de/ontology/diglib-struct#physSequence">
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#physSequence">
     <rdfs:label xml:lang="de">Seiten</rdfs:label>
-  </rdfs:Property>
+  </rdfs:Class>
 </rdf:RDF>
