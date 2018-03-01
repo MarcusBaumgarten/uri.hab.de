@@ -10,16 +10,16 @@
     <skos:prefLabel xml:lang="de">Datentypen der Wolfenbütteler Digitalen Bibliothek</skos:prefLabel>
     <dct:publisher>
       <foaf:Organization rdf:about="http://uri.hab.de/instance/organization/habwf">
-        <rdfs:label>Herzog August Bibliothek Wolfenbüttel</rdfs:label>
+        <skos:prefLabel>Herzog August Bibliothek Wolfenbüttel</skos:prefLabel>
       </foaf:Organization>
     </dct:publisher>
     <dct:license>
       <dct:LicenseDocument>
         <owl:sameAs rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
-        <rdfs:label>CC0 1.0 Universal</rdfs:label>
+        <skos:prefLabel>CC0 1.0 Universal</skos:prefLabel>
       </dct:LicenseDocument>
     </dct:license>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-20</dct:modified>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-01</dct:modified>
     <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-06-23</dct:created>
   </rdf:Description>
 
