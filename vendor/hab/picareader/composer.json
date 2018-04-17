@@ -1,0 +1,24 @@
+{
+    "name": "hab/picareader",
+    "description": "Classes for reading Pica+ records encoded in Pica, PicaXML and PicaPlain",
+    "type": "library",
+    "license": "GPL-3.0+",
+    "authors": [
+	{
+	    "name": "David Maus",
+	    "email": "maus@hab.de",
+	    "role": "Developer"
+	}
+    ],
+    "support": {
+	"email": "maus@hab.de"
+    },
+    "require": {
+        "hab/picarecord": "~1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "HAB\\Pica": "src/"
+        }
+    }
+}

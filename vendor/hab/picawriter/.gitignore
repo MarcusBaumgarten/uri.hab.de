@@ -1,0 +1,11 @@
+*~
+\#*
+.\#*
+TAGS
+ChangeLog
+vendor
+review
+build
+composer.phar
+composer.lock
+test.php

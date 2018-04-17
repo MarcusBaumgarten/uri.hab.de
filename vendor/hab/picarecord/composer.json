@@ -1,0 +1,21 @@
+{
+    "name": "hab/picarecord",
+    "description": "Object oriented interface to Pica+ records, fields, and subfields",
+    "type": "library",
+    "license": "GPL-3.0+",
+    "authors": [
+	{
+	    "name": "David Maus",
+	    "email": "maus@hab.de",
+	    "role": "Developer"
+	}
+    ],
+    "support": {
+	"email": "maus@hab.de"
+    },
+    "autoload": {
+        "psr-0": {
+            "HAB\\Pica": "src/"
+        }
+    }
+}

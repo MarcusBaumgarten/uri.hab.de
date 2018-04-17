@@ -1,0 +1,8 @@
+{
+    "require": {
+        "symfony/http-foundation": "^3.4",
+        "hab/picarecord": "^1.1",
+        "hab/picareader": "^1.2",
+        "hab/picawriter": "^1.0"
+    }
+}
