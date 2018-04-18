@@ -67,18 +67,34 @@ switch ($format) {
         $content = $writer->write($record);
         $response = new Response($content, 200, array('Content-Type' => 'application/xml'));
         break;
-    case 'rdf':
+    case 'mods':
         $type = (string)$record->getFirstMatchingField('002@/00')->getNthSubfield(0, '0');
         if ($type[0] === 'T') {
+            $response = new Response('<h1>406 Not Acceptable</h1>', 406, array('Content-Type' => 'text/html'));
+        } else {
+            $templateUri = __DIR__ . '/../../../../src/xslt/pica/mods.xsl';
             $sourceUri = sprintf(PICA_TEMPLATE, $ident);
-            $templateUri = __DIR__ . '/../../../../src/xslt/pica2skos.xsl';
             $content = transform($sourceUri, $templateUri);
             if ($content) {
                 $response = new Response($content, 200, array('Content-Type' => 'application/rdf+xml'));
                 break;
             }
         }
-        // Fall through
+        $response = new Response('<h1>406 Not Acceptable</h1>', 406, array('Content-Type' => 'text/html'));
+        break;
+    case 'rdf':
+        $type = (string)$record->getFirstMatchingField('002@/00')->getNthSubfield(0, '0');
+        if ($type[0] === 'T') {
+            $templateUri = __DIR__ . '/../../../../src/xslt/pica/auth.xsl';
+            $sourceUri = sprintf(PICA_TEMPLATE, $ident);
+            $content = transform($sourceUri, $templateUri);
+            if ($content) {
+                $response = new Response($content, 200, array('Content-Type' => 'application/rdf+xml'));
+                break;
+            }
+        }
+        $response = new Response('<h1>406 Not Acceptable</h1>', 406, array('Content-Type' => 'text/html'));
+        break;
     default:
         $response = new Response('<h1>406 Not Acceptable</h1>', 406, array('Content-Type' => 'text/html'));
 }
