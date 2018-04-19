@@ -4,6 +4,9 @@ require_once __DIR__ . '/../../../../vendor/autoload.php';
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+use Negotiation\Negotiator;
 
 use HAB\Pica\Record\Record;
 use HAB\Pica\Reader\PicaNormReader;
@@ -11,6 +14,7 @@ use HAB\Pica\Writer\PicaXmlWriter;
 
 define('PSI_TEMPLATE', 'http://opac.lbs-braunschweig.gbv.de/DB=2/PLAIN=Y/CHARSET=UTF8/PLAINTTLCHARSET=UTF8/PPN?PPN=%s');
 define('PICA_TEMPLATE', 'http://uri.hab.de/instance/proxy/opac-de-23/%s.xml');
+define('RDF_TEMPLATE', 'http://uri.hab.de/instance/proxy/opac-de-23/%s.rdf');
 
 function terminate (Request $request, Response $response) {
     $response->prepare($request);
@@ -47,7 +51,14 @@ function transform ($sourceUri, $templateUri) {
 $request = Request::createFromGlobals();
 
 $route = basename($request->server->get('REQUEST_URI'));
-if (!preg_match('@^[0-9]{8}[0-9X]\.[a-z]+@', $route)) {
+
+
+if (preg_match('@^(?<ident>[0-9]{8}[0-9X])(?<format>\.[a-z]+)?$@', $route, $match)) {
+    if (!array_key_exists('format', $match)) {
+        $response = new RedirectResponse(sprintf(RDF_TEMPLATE, $match['ident']), 303);
+        terminate($request, $response);
+    }
+} else {
     $response = new Response('<h1>400 Bad Request</h1>', 400, array('Content-Type' => 'text/html'));
     terminate($request, $response);
 }
