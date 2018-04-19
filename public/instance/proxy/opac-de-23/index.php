@@ -14,6 +14,7 @@ use HAB\Pica\Writer\PicaXmlWriter;
 
 define('PSI_TEMPLATE', 'http://opac.lbs-braunschweig.gbv.de/DB=2/PLAIN=Y/CHARSET=UTF8/PLAINTTLCHARSET=UTF8/PPN?PPN=%s');
 define('PICA_TEMPLATE', 'http://uri.hab.de/instance/proxy/opac-de-23/%s.xml');
+define('MODS_TEMPLATE', 'http://uri.hab.de/instance/proxy/opac-de-23/%s.mods');
 define('RDF_TEMPLATE', 'http://uri.hab.de/instance/proxy/opac-de-23/%s.rdf');
 
 function terminate (Request $request, Response $response) {
@@ -25,6 +26,7 @@ function terminate (Request $request, Response $response) {
 function load ($ident) {
     $content = @file_get_contents(sprintf(PSI_TEMPLATE, $ident));
     if ($content) {
+        $content = normalizer_normalize($content);
         $reader = new PicaNormReader();
         $reader->open($content);
         return $reader->read();
@@ -98,6 +100,14 @@ switch ($format) {
         if ($type[0] === 'T') {
             $templateUri = __DIR__ . '/../../../../src/xslt/pica/auth.xsl';
             $sourceUri = sprintf(PICA_TEMPLATE, $ident);
+            $content = transform($sourceUri, $templateUri);
+            if ($content) {
+                $response = new Response($content, 200, array('Content-Type' => 'application/rdf+xml'));
+                break;
+            }
+        } else {
+            $templateUri = __DIR__ . '/../../../../src/xslt/mods2rdf.xsl';
+            $sourceUri = sprintf(MODS_TEMPLATE, $ident);
             $content = transform($sourceUri, $templateUri);
             if ($content) {
                 $response = new Response($content, 200, array('Content-Type' => 'application/rdf+xml'));
