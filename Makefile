@@ -15,6 +15,10 @@ RM    := rm -f
 test/schema/%.rnc: src/schema/%.rnc
 	$(COPY) $< $@
 
+.PHONY: server
+server:
+	php -S 127.0.0.1:9999 -t public
+
 .PHONY: test
 test: copy-schema test/schema/common.sch test/schema/common.xspec test/schema/vocab.sch test/schema/vocab.xspec
 	$(XSPEC) -s test/schema/common.xspec
