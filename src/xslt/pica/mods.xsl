@@ -308,8 +308,8 @@
           </mods:title>
         </xsl:otherwise>
       </xsl:choose>
-      <xsl:if test="pica:subfield[@code = 'd']">
-        <mods:subTitle><xsl:value-of select="pica:subfield[@code = 'd']"/></mods:subTitle>
+      <xsl:if test="$titleField/pica:subfield[@code = 'd']">
+        <mods:subTitle><xsl:value-of select="$titleField/pica:subfield[@code = 'd']"/></mods:subTitle>
       </xsl:if>
     </mods:titleInfo>
   </xsl:template>
