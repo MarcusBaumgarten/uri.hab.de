@@ -58,6 +58,21 @@
     </mods:subject>
   </xsl:template>
 
+  <!-- Basisklassifikation -->
+  <xsl:template match="pica:datafield[@tag = '045Q']">
+    <mods:classification authority="bkl">
+      <xsl:call-template name="add-proxy-valueURI"/>
+      <xsl:choose>
+        <xsl:when test="pica:subfield[@code = '8']">
+          <xsl:value-of select="pica:subfield[@code = '8']"/>
+        </xsl:when>
+        <xsl:when test="pica:subfield[@code = 'a']">
+          <xsl:value-of select="pica:subfield[@code = 'a']"/>
+        </xsl:when>
+      </xsl:choose>
+    </mods:classification>
+  </xsl:template>
+
   <!-- Klassifikation der Barocknachrichten -->
   <xsl:template match="pica:datafield[@tag = '145Z']/pica:subfield[@code = 'a'][starts-with(., 'BAROCK')]">
     <xsl:variable name="valueURI" select="normalize-space(substring-after(substring-before(., ' - '), 'BAROCK '))"/>
