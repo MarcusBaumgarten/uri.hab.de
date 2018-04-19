@@ -429,7 +429,17 @@
         </mods:namePart>
       </xsl:if>
       <mods:displayForm>
-        <xsl:value-of select="pica:subfield[@code = '8']"/>
+        <xsl:choose>
+          <xsl:when test="pica:subfield[@code = '8']">
+            <xsl:value-of select="pica:subfield[@code = '8']"/>
+          </xsl:when>
+          <xsl:when test="pica:subfield[@code = 'a'] and pica:subfield[@code = 'd']">
+            <xsl:value-of select="concat(pica:subfield[@code = 'd'], ', ', pica:subfield[@code = 'a'])"/>
+          </xsl:when>
+          <xsl:when test="pica:subfield[@code = 'a'] or pica:subfield[@code = 'd']">
+            <xsl:value-of select="concat(pica:subfield[@code = 'a'], pica:subfield[@code = 'd'])"/>
+          </xsl:when>
+        </xsl:choose>
       </mods:displayForm>
       <mods:role>
         <mods:roleTerm authority="marcrelator" type="code" valueURI="http://id.loc.gov/vocabulary/relators/{$personRole}">
