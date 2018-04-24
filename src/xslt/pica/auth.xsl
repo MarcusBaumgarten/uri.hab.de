@@ -40,9 +40,9 @@
           <xsl:value-of select="$nameField/pica:subfield[@code = 'P']"/>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="$nameField/pica:subfield[@code = 'd']"/>
-          <xsl:text>, </xsl:text>
           <xsl:value-of select="$nameField/pica:subfield[@code = 'a']"/>
+          <xsl:text>, </xsl:text>
+          <xsl:value-of select="$nameField/pica:subfield[@code = 'd']"/>
         </xsl:otherwise>
       </xsl:choose>
       <xsl:if test="$nameField/pica:subfield[@code = 'l']">
