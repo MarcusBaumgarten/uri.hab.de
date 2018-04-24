@@ -40,9 +40,9 @@
           <xsl:value-of select="$nameField/pica:subfield[@code = 'P']"/>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="$nameField/pica:subfield[@code = 'a']"/>
-          <xsl:text>, </xsl:text>
           <xsl:value-of select="$nameField/pica:subfield[@code = 'd']"/>
+          <xsl:text> </xsl:text>
+          <xsl:value-of select="$nameField/pica:subfield[@code = 'a']"/>
         </xsl:otherwise>
       </xsl:choose>
       <xsl:if test="$nameField/pica:subfield[@code = 'l']">
@@ -50,7 +50,7 @@
       </xsl:if>
     </xsl:variable>
 
-    <skos:prefLabel><xsl:value-of select="$nameValue"/></skos:prefLabel>
+    <skos:prefLabel><xsl:value-of select="normalize-space($nameValue)"/></skos:prefLabel>
 
   </xsl:template>
 
