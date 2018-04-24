@@ -1,6 +1,6 @@
 <xsl:transform version="1.0"
                exclude-result-prefixes="rdf pica skos"
-               xmlns:foaf="http://xmlns.com/foaf/0.1/"
+               xmlns:dct="http://purl.org/dc/terms/"
                xmlns:pica="info:srw/schema/5/picaXML-v1.0"
                xmlns:owl="http://www.w3.org/2002/07/owl#"
                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,12 +11,12 @@
 
   <xsl:template match="pica:record[starts-with(pica:datafield[@tag = '002@']/pica:subfield[@code = '0'], 'Tp')]">
     <rdf:RDF>
-      <foaf:Person rdf:about="http://uri.hab.de/instance/proxy/opac-de-23/{pica:datafield[@tag = '003@']/pica:subfield[@code = '0']}">
+      <dct:Agent rdf:about="http://uri.hab.de/instance/proxy/opac-de-23/{pica:datafield[@tag = '003@']/pica:subfield[@code = '0']}">
         <xsl:apply-templates/>
-        <xsl:call-template name="foaf:name">
+        <xsl:call-template name="dct:Agent">
           <xsl:with-param name="nameField" select="pica:datafield[@tag = '028A']"/>
         </xsl:call-template>
-      </foaf:Person>
+      </dct:Agent>
     </rdf:RDF>
   </xsl:template>
 
@@ -31,7 +31,7 @@
     <owl:sameAs rdf:resource="{pica:subfield[@code = 'a']}"/>
   </xsl:template>
 
-  <xsl:template name="foaf:name">
+  <xsl:template name="dct:Agent">
     <xsl:param name="nameField"/>
 
     <xsl:variable name="nameValue">
@@ -51,7 +51,6 @@
     </xsl:variable>
 
     <skos:prefLabel><xsl:value-of select="$nameValue"/></skos:prefLabel>
-    <foaf:name><xsl:value-of select="$nameValue"/></foaf:name>
 
   </xsl:template>
 
