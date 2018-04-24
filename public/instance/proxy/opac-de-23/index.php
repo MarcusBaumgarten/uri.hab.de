@@ -95,6 +95,21 @@ switch ($format) {
         }
         $response = new Response('<h1>406 Not Acceptable</h1>', 406, array('Content-Type' => 'text/html'));
         break;
+    case 'dc':
+        $type = (string)$record->getFirstMatchingField('002@/00')->getNthSubfield(0, '0');
+        if ($type[0] === 'T') {
+            $response = new Response('<h1>406 Not Acceptable</h1>', 406, array('Content-Type' => 'text/html'));
+        } else {
+            $templateUri = __DIR__ . '/../../../../src/xslt/mods2dc.xsl';
+            $sourceUri = sprintf(MODS_TEMPLATE, $ident);
+            $content = transform($sourceUri, $templateUri);
+            if ($content) {
+                $response = new Response($content, 200, array('Content-Type' => 'application/xml'));
+                break;
+            }
+        }
+        $response = new Response('<h1>406 Not Acceptable</h1>', 406, array('Content-Type' => 'text/html'));
+        break;
     case 'rdf':
         $type = (string)$record->getFirstMatchingField('002@/00')->getNthSubfield(0, '0');
         if ($type[0] === 'T') {
