@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteBase /instance/proxy/opac-de-23/
 
-RewriteRule ^([0-9]{8}[0-9X](\.[a-z]+)?)$ /instance/proxy/opac-de-23/index.php/$1 [END]
+RewriteRule ^([0-9]+[0-9X](\.[a-z]+)?)$ /instance/proxy/opac-de-23/index.php/$1 [END]

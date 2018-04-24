@@ -55,7 +55,7 @@ $request = Request::createFromGlobals();
 $route = basename($request->server->get('REQUEST_URI'));
 
 
-if (preg_match('@^(?<ident>[0-9]{8}[0-9X])(?<format>\.[a-z]+)?$@', $route, $match)) {
+if (preg_match('@^(?<ident>[0-9]+[0-9X])(?<format>\.[a-z]+)?$@', $route, $match)) {
     if (!array_key_exists('format', $match)) {
         $response = new RedirectResponse(sprintf(RDF_TEMPLATE, $match['ident']), 303);
         terminate($request, $response);
