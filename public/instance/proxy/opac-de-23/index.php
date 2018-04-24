@@ -89,7 +89,7 @@ switch ($format) {
             $sourceUri = sprintf(PICA_TEMPLATE, $ident);
             $content = transform($sourceUri, $templateUri);
             if ($content) {
-                $response = new Response($content, 200, array('Content-Type' => 'application/rdf+xml'));
+                $response = new Response($content, 200, array('Content-Type' => 'application/mods+xml'));
                 break;
             }
         }
