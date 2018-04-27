@@ -1,6 +1,6 @@
 <xsl:transform version="1.0"
                exclude-result-prefixes="rdf pica skos"
-               xmlns:dct="http://purl.org/dc/terms/"
+               xmlns:foaf="http://xmlns.com/foaf/0.1/"
                xmlns:pica="info:srw/schema/5/picaXML-v1.0"
                xmlns:owl="http://www.w3.org/2002/07/owl#"
                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,12 +11,23 @@
 
   <xsl:template match="pica:record[starts-with(pica:datafield[@tag = '002@']/pica:subfield[@code = '0'], 'Tp')]">
     <rdf:RDF>
-      <dct:Agent rdf:about="http://uri.hab.de/instance/proxy/opac-de-23/{pica:datafield[@tag = '003@']/pica:subfield[@code = '0']}">
+      <foaf:Person rdf:about="http://uri.hab.de/instance/proxy/opac-de-23/{pica:datafield[@tag = '003@']/pica:subfield[@code = '0']}">
         <xsl:apply-templates/>
-        <xsl:call-template name="dct:Agent">
+        <xsl:call-template name="foaf:Person">
           <xsl:with-param name="nameField" select="pica:datafield[@tag = '028A']"/>
         </xsl:call-template>
-      </dct:Agent>
+      </foaf:Person>
+    </rdf:RDF>
+  </xsl:template>
+
+  <xsl:template match="pica:record[starts-with(pica:datafield[@tag = '002@']/pica:subfield[@code = '0'], 'Tb')]">
+    <rdf:RDF>
+      <foaf:Person rdf:about="http://uri.hab.de/instance/proxy/opac-de-23/{pica:datafield[@tag = '003@']/pica:subfield[@code = '0']}">
+        <xsl:apply-templates/>
+        <xsl:call-template name="foaf:Organization">
+          <xsl:with-param name="nameField" select="pica:datafield[@tag = '028A']"/>
+        </xsl:call-template>
+      </foaf:Person>
     </rdf:RDF>
   </xsl:template>
 
@@ -31,7 +42,17 @@
     <owl:sameAs rdf:resource="{pica:subfield[@code = 'a']}"/>
   </xsl:template>
 
-  <xsl:template name="dct:Agent">
+  <xsl:template name="foaf:Organization">
+    <xsl:param name="nameField"/>
+
+    <xsl:variable name="nameValue">
+      <xsl:value-of select="$nameField/pica:subfield[@code = 'a']"/>
+    </xsl:variable>
+    <skos:prefLabel><xsl:value-of select="normalize-space($nameValue)"/></skos:prefLabel>
+
+  </xsl:template>
+
+  <xsl:template name="foaf:Person">
     <xsl:param name="nameField"/>
 
     <xsl:variable name="nameValue">
