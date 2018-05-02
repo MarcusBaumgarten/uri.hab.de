@@ -34,7 +34,9 @@
   <xsl:template match="pica:record">
     <xsl:variable name="recordType" select="substring(pica:datafield[@tag = '002@']/pica:subfield[@code = '0'], 2, 1)"/>
     <rdf:RDF>
-      <skos:Concept rdf:about="http://uri.hab.de/instance/proxy/opac-de-23/{pica:datafield[@tag = '003@']/pica:subfield[@code = '0']}"/>
+      <skos:Concept rdf:about="http://uri.hab.de/instance/proxy/opac-de-23/{pica:datafield[@tag = '003@']/pica:subfield[@code = '0']}">
+        <xsl:apply-templates/>
+      </skos:Concept>
     </rdf:RDF>
   </xsl:template>
 
