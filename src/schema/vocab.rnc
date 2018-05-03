@@ -31,6 +31,7 @@ skos.Concept =
     & skos.notation?
     & skos.inScheme
     & skos.match
+    & skos.hierarchy
     & empty
    }
 
@@ -57,9 +58,6 @@ skos.match =
    element skos:relatedMatch {
       rdfResource
    }*
- & element skos:broader {
-      rdfResource
-   }*
  & element skos:related {
     rdfResource
  }*
@@ -71,3 +69,7 @@ skos.altLabel = element skos:altLabel {
    attribute xml:lang { xsd:language }?,
    text
 }
+
+skos.hierarchy =
+   element skos:broader { rdfResource }
+ & element skos:narrower { rdfResource }
