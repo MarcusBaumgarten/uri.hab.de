@@ -35,6 +35,7 @@ optionalMetadata =
  & element dct:description { rdfLiteral }*
  & element dct:title { rdfLiteral }*
  & element dct:relation { rdfResource }*
+ & element dct:source { rdfResource }*
 
 requiredMetadata =
    element dct:publisher { Agent }
