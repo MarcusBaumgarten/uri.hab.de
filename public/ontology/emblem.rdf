@@ -5,7 +5,8 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:vann="http://purl.org/vocab/vann/">
 
   <rdf:Description rdf:about="http://uri.hab.de/ontology/emblem">
     <dct:title xml:lang="en">Wolfenbüttel Core Emblem Ontology</dct:title>
@@ -72,6 +73,9 @@
         <skos:prefLabel xml:lang="de">Emblematik &lt;Emblemliteratur&gt;</skos:prefLabel>
       </skos:Concept>
     </dct:subject>
+    <vann:preferredNamespacePrefix>emblem</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>http://uri.hab.de/ontology/emblem#</vann:preferredNamespaceUri>
+    <vann:example rdf:resource="http://uri.hab.de/instance/emblem/E018850"/>
   </rdf:Description>
 
   <rdfs:Class rdf:about="http://uri.hab.de/ontology/emblem#Emblem">
