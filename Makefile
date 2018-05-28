@@ -37,3 +37,6 @@ clean:
 	$(RM) -r test/scheme/xspec
 
 copy-schema: test/schema/common.rnc test/schema/vocab.rnc
+
+emblem: public/ontology/emblem.rdf
+	$(SAXON) -xsl:src/xslt/emblem.xsl -o:public/ontology/emblem.html public/ontology/emblem.rdf
