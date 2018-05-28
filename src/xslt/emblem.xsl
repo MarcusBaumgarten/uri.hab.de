@@ -52,6 +52,9 @@
         </li>
       </xsl:for-each>
     </ul>
+    <div>
+      <xsl:value-of select="dct:description[1]"/>
+    </div>
     <h2>See also</h2>
     <ul>
       <xsl:for-each select="dct:relation">
