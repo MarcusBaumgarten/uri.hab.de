@@ -9,6 +9,10 @@
 
   <rdf:Description rdf:about="http://uri.hab.de/ontology/emblem">
     <dct:title xml:lang="en">Wolfenbüttel Core Emblem Ontology</dct:title>
+    <dct:description xml:lang="en">
+      Ontology to describe the emblems of the Wolfenbüttel emblem collection. The ontology was created during the
+      project "Emblematica Online – Linked Open Emblem Data" (2015–2017), funded by the German Research Association.
+    </dct:description>
     <dct:creator>
       <foaf:Person>
         <foaf:name>Monika Biel</foaf:name>
