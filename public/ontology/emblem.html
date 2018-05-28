@@ -1,0 +1,228 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title>Wolfenbüttel Core Emblem Ontology</title><style type="text/css">
+          body { max-width: 60em; margin: 0 auto; font-family: "Open Sans", sans-serif; }
+          table, tr, th, td { border-collapse: collapse; }
+          th { text-align: left; vertical-align: top; }
+          th, td { padding: 0.25em 0.5em; }
+        </style><link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+      <meta name="DCTERMS.title" content="Wolfenbüttel Core Emblem Ontology">
+      <meta name="DCTERMS.creator" content="Monika Biel">
+      <meta name="DCTERMS.creator" content="David Maus">
+      <meta name="DCTERMS.relation" content="Project &#34;Linked Open Emblem Data&#34; (2015-2017)">
+      <link rel="DCT.relation" href="http://diglib.hab.de?link=016">
+      <meta name="DCTERMS.relation" content="Emblem Schema Namespace Document">
+      <link rel="DCT.relation" href="http://diglib.hab.de/rules/schema/emblem">
+      <meta name="DCTERMS.relation" content="Cole, Timothy W., Myung-Ja K. Han, Maria Janina Sarol, Monika Biel, and David Maus. “Using Linked Open Data to Enhance the Discoverability, Functionality &amp; Impact of Emblematica Online.” Library Hi Tech 35, no. 1 (January 31, 2017)">
+      <link rel="DCT.relation" href="http://dx.doi.org/10.1108/LHT-11-2016-0126">
+      <meta name="DCTERMS.relation" content="Datenabzüge: Linked Open Emblem Data / Herausgegeben von Herzog August Bibliothek Wolfenbüttel - Wolfenbüttel : Herzog August Bibliothek, 2018–.">
+      <link rel="DCT.relation" href="http://diglib.hab.de/edoc/ed000256/start.htm">
+      <meta name="DCTERMS.publisher" content="Herzog August Bibliothek Wolfenbüttel">
+      <meta name="DCTERMS.license" content="CC0 1.0 Universal">
+      <meta name="DCTERMS.modified" content="2018-01-29">
+      <meta name="DCTERMS.created" content="2018-01-29">
+      <meta name="DCTERMS.subject" content="Linked Data">
+      <meta name="DCTERMS.subject" content="Emblematik <Emblemliteratur&gt;">
+   </head>
+   <body>
+      <h1>Wolfenbüttel Core Emblem Ontology</h1>
+      <ul>
+         <li>David Maus &lt;maus@hab.de&gt;</li>
+         <li>Monika Biel &lt;biel@hab.de&gt;</li>
+      </ul>
+      <h2>See also</h2>
+      <ul>
+         <li><a href="http://diglib.hab.de?link=016" target="_blank">Project "Linked Open Emblem Data" (2015-2017)</a></li>
+         <li><a href="http://diglib.hab.de/rules/schema/emblem" target="_blank">Emblem Schema Namespace Document</a></li>
+         <li><a href="http://dx.doi.org/10.1108/LHT-11-2016-0126" target="_blank">
+               Cole, Timothy W., Myung-Ja K. Han, Maria Janina Sarol, Monika Biel, and David Maus.
+               “Using Linked Open Data to Enhance the Discoverability, Functionality &amp; Impact of
+               Emblematica Online.” Library Hi Tech 35, no. 1 (January 31, 2017)
+               </a></li>
+         <li><a href="http://diglib.hab.de/edoc/ed000256/start.htm" target="_blank">
+               Datenabzüge: Linked Open Emblem Data / Herausgegeben von Herzog August Bibliothek
+               Wolfenbüttel - Wolfenbüttel :
+               Herzog August Bibliothek, 2018–.
+               </a></li>
+      </ul>
+      <h2>Classes</h2>
+      <h3 id="Emblem">Emblem</h3>
+      <table>
+         <tbody>
+            <tr>
+               <th>URI</th>
+               <td>http://uri.hab.de/ontology/emblem#Emblem</td>
+            </tr>
+            <tr>
+               <th>comment</th>
+               <td>The Emblem or Sinnbild (ca. 1531-1750) is a bimedial genre, combining texts and images
+                  to express and illustrate complex aspects of contemporary culture in a compact and
+                  compelling format. The term “emblem” was first used with this sense by Andrea Alciato,
+                  in his Emblematum Liber (Augsburg: Steyner, 1531), who is acknowledged as the founder
+                  of the genre. Typically an emblem consists of a motto, an often puzzling image called
+                  the pictura, and a subtext called a subscriptio or epigram. In any given emblem all
+                  or only some of these may be present, as may more than one of each.
+               </td>
+            </tr>
+            <tr>
+               <th>Properties</th>
+               <td><a href="#hasPart">hasPart</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <h3 id="EmblemPart">Emblem part</h3>
+      <table>
+         <tbody>
+            <tr>
+               <th>URI</th>
+               <td>http://uri.hab.de/ontology/emblem#EmblemPart</td>
+            </tr>
+            <tr>
+               <th>Subclasses</th>
+               <td><a href="#Motto">Motto</a>, <a href="#Subscriptio">Subscriptio</a>, <a href="#Pictura">Pictura</a></td>
+            </tr>
+            <tr>
+               <th>Properties</th>
+               <td><a href="#hasTextSegment">hasTextSegment</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <h3 id="Motto">Motto</h3>
+      <table>
+         <tbody>
+            <tr>
+               <th>URI</th>
+               <td>http://uri.hab.de/ontology/emblem#Motto</td>
+            </tr>
+            <tr>
+               <th>subClassOf</th>
+               <td>http://uri.hab.de/ontology/emblem#EmblemPart</td>
+            </tr>
+            <tr>
+               <th>comment</th>
+               <td>Motto (Inscriptio, Lemma) is a short aphorism from canonical texts of ancient writers
+                  or the Bible.
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <h3 id="Subscriptio">Subscriptio</h3>
+      <table>
+         <tbody>
+            <tr>
+               <th>URI</th>
+               <td>http://uri.hab.de/ontology/emblem#Subscriptio</td>
+            </tr>
+            <tr>
+               <th>subClassOf</th>
+               <td>http://uri.hab.de/ontology/emblem#EmblemPart</td>
+            </tr>
+            <tr>
+               <th>comment</th>
+               <td>The Subscriptio or Epigram, usually in verse, to be considered in conjunction with
+                  the motto and pictura.
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <h3 id="Pictura">Pictura</h3>
+      <table>
+         <tbody>
+            <tr>
+               <th>URI</th>
+               <td>http://uri.hab.de/ontology/emblem#Pictura</td>
+            </tr>
+            <tr>
+               <th>subClassOf</th>
+               <td>http://uri.hab.de/ontology/emblem#EmblemPart</td>
+            </tr>
+            <tr>
+               <th>comment</th>
+               <td>The Pictura (Icon, Imago or Symbolon) may contains meaningful, symbolic and allegorical
+                  elements and providing the visual as opposed to verbal element. Other elements from
+                  an emblem may be found in the pictura, e.g. motto.
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <h3 id="TextSegment">Text segment</h3>
+      <table>
+         <tbody>
+            <tr>
+               <th>URI</th>
+               <td>http://uri.hab.de/ontology/emblem#TextSegment</td>
+            </tr>
+         </tbody>
+      </table>
+      <h2>Properties</h2>
+      <h3 id="hasPart">Has Part</h3>
+      <table>
+         <tbody>
+            <tr>
+               <th>URI</th>
+               <td>http://uri.hab.de/ontology/emblem#hasPart</td>
+            </tr>
+            <tr>
+               <th>subPropertyOf</th>
+               <td>http://purl.org/dc/terms/hasPart</td>
+            </tr>
+            <tr>
+               <th>range</th>
+               <td>http://uri.hab.de/ontology/emblem#EmblemPart</td>
+            </tr>
+            <tr>
+               <th>domain</th>
+               <td>http://uri.hab.de/ontology/emblem#Emblem</td>
+            </tr>
+         </tbody>
+      </table>
+      <h3 id="hasTextSegment">Has text segment</h3>
+      <table>
+         <tbody>
+            <tr>
+               <th>URI</th>
+               <td>http://uri.hab.de/ontology/emblem#hasTextSegment</td>
+            </tr>
+            <tr>
+               <th>subPropertyOf</th>
+               <td>http://purl.org/dc/terms/hasPart</td>
+            </tr>
+            <tr>
+               <th>domain</th>
+               <td>http://uri.hab.de/ontology/emblem#EmblemPart</td>
+            </tr>
+            <tr>
+               <th>range</th>
+               <td>http://uri.hab.de/ontology/emblem#TextSegment</td>
+            </tr>
+         </tbody>
+      </table>
+      <h3 id="isShownBy">Is shown by</h3>
+      <table>
+         <tbody>
+            <tr>
+               <th>URI</th>
+               <td>http://uri.hab.de/ontology/emblem#isShownBy</td>
+            </tr>
+            <tr>
+               <th>seeAlso</th>
+               <td>http://www.europeana.eu/schemas/edm/isShownBy</td>
+            </tr>
+         </tbody>
+      </table>
+      <h3 id="isShownAt">Is shown at</h3>
+      <table>
+         <tbody>
+            <tr>
+               <th>URI</th>
+               <td>http://uri.hab.de/ontology/emblem#isShownAt</td>
+            </tr>
+            <tr>
+               <th>seeAlso</th>
+               <td>http://www.europeana.eu/schemas/edm/isShownAt</td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>
