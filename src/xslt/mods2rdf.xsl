@@ -9,7 +9,7 @@
                xmlns:mods="http://www.loc.gov/mods/v3"
                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <xsl:variable name="proxyBaseUrl">http://uri.hab.de/instance/proxy/opac-de-23/</xsl:variable>
+  <xsl:variable name="proxyBaseUrl">http://uri.hab.de/instance/proxy/opac-de-23/record/</xsl:variable>
 
   <xsl:template match="mods:mods">
     <rdf:RDF>

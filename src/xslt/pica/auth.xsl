@@ -11,7 +11,7 @@
 
   <xsl:template match="pica:record[starts-with(pica:datafield[@tag = '002@']/pica:subfield[@code = '0'], 'Tp')]">
     <rdf:RDF>
-      <foaf:Person rdf:about="http://uri.hab.de/instance/proxy/opac-de-23/{pica:datafield[@tag = '003@']/pica:subfield[@code = '0']}">
+      <foaf:Person rdf:about="http://uri.hab.de/instance/proxy/opac-de-23/record/{pica:datafield[@tag = '003@']/pica:subfield[@code = '0']}">
         <xsl:apply-templates/>
         <xsl:call-template name="foaf:Person">
           <xsl:with-param name="nameField" select="pica:datafield[@tag = '028A']"/>
@@ -22,7 +22,7 @@
 
   <xsl:template match="pica:record[starts-with(pica:datafield[@tag = '002@']/pica:subfield[@code = '0'], 'Tb')]">
     <rdf:RDF>
-      <foaf:Person rdf:about="http://uri.hab.de/instance/proxy/opac-de-23/{pica:datafield[@tag = '003@']/pica:subfield[@code = '0']}">
+      <foaf:Person rdf:about="http://uri.hab.de/instance/proxy/opac-de-23/record/{pica:datafield[@tag = '003@']/pica:subfield[@code = '0']}">
         <xsl:apply-templates/>
         <xsl:call-template name="foaf:Organization">
           <xsl:with-param name="nameField" select="pica:datafield[@tag = '028A']"/>
@@ -34,7 +34,7 @@
   <xsl:template match="pica:record">
     <xsl:variable name="recordType" select="substring(pica:datafield[@tag = '002@']/pica:subfield[@code = '0'], 2, 1)"/>
     <rdf:RDF>
-      <skos:Concept rdf:about="http://uri.hab.de/instance/proxy/opac-de-23/{pica:datafield[@tag = '003@']/pica:subfield[@code = '0']}">
+      <skos:Concept rdf:about="http://uri.hab.de/instance/proxy/opac-de-23/record/{pica:datafield[@tag = '003@']/pica:subfield[@code = '0']}">
         <xsl:apply-templates/>
       </skos:Concept>
     </rdf:RDF>

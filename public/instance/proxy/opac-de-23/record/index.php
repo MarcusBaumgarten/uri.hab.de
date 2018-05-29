@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../../../../vendor/autoload.php';
+require_once __DIR__ . '/../../../../../vendor/autoload.php';
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -13,9 +13,9 @@ use HAB\Pica\Reader\PicaNormReader;
 use HAB\Pica\Writer\PicaXmlWriter;
 
 define('PSI_TEMPLATE', 'http://opac.lbs-braunschweig.gbv.de/DB=2/PLAIN=Y/CHARSET=UTF8/PLAINTTLCHARSET=UTF8/PPN?PPN=%s');
-define('PICA_TEMPLATE', 'http://uri.hab.de/instance/proxy/opac-de-23/%s.xml');
-define('MODS_TEMPLATE', 'http://uri.hab.de/instance/proxy/opac-de-23/%s.mods');
-define('RDF_TEMPLATE', 'http://uri.hab.de/instance/proxy/opac-de-23/%s.rdf');
+define('PICA_TEMPLATE', 'http://uri.hab.de/instance/proxy/opac-de-23/record/%s.xml');
+define('MODS_TEMPLATE', 'http://uri.hab.de/instance/proxy/opac-de-23/record/%s.mods');
+define('RDF_TEMPLATE', 'http://uri.hab.de/instance/proxy/opac-de-23/record/%s.rdf');
 
 function terminate (Request $request, Response $response) {
     $response->prepare($request);
@@ -85,11 +85,11 @@ switch ($format) {
         if ($type[0] === 'T') {
             $response = new Response('<h1>406 Not Acceptable</h1>', 406, array('Content-Type' => 'text/html'));
         } else {
-            $templateUri = __DIR__ . '/../../../../src/xslt/pica/mods.xsl';
+            $templateUri = __DIR__ . '/../../../../../src/xslt/pica/mods.xsl';
             $sourceUri = sprintf(PICA_TEMPLATE, $ident);
             $content = transform($sourceUri, $templateUri);
             if ($content) {
-                $response = new Response($content, 200, array('Content-Type' => 'application/mods+xml'));
+                $response = new Response($content, 200, array('Content-Type' => 'application/xml'));
                 break;
             }
         }
@@ -100,7 +100,7 @@ switch ($format) {
         if ($type[0] === 'T') {
             $response = new Response('<h1>406 Not Acceptable</h1>', 406, array('Content-Type' => 'text/html'));
         } else {
-            $templateUri = __DIR__ . '/../../../../src/xslt/mods2dc.xsl';
+            $templateUri = __DIR__ . '/../../../../../src/xslt/mods2dc.xsl';
             $sourceUri = sprintf(MODS_TEMPLATE, $ident);
             $content = transform($sourceUri, $templateUri);
             if ($content) {
@@ -113,7 +113,7 @@ switch ($format) {
     case 'rdf':
         $type = (string)$record->getFirstMatchingField('002@/00')->getNthSubfield(0, '0');
         if ($type[0] === 'T') {
-            $templateUri = __DIR__ . '/../../../../src/xslt/pica/auth.xsl';
+            $templateUri = __DIR__ . '/../../../../../src/xslt/pica/auth.xsl';
             $sourceUri = sprintf(PICA_TEMPLATE, $ident);
             $content = transform($sourceUri, $templateUri);
             if ($content) {
@@ -121,7 +121,7 @@ switch ($format) {
                 break;
             }
         } else {
-            $templateUri = __DIR__ . '/../../../../src/xslt/mods2rdf.xsl';
+            $templateUri = __DIR__ . '/../../../../../src/xslt/mods2rdf.xsl';
             $sourceUri = sprintf(MODS_TEMPLATE, $ident);
             $content = transform($sourceUri, $templateUri);
             if ($content) {
