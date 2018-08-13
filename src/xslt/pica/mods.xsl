@@ -266,7 +266,7 @@
     </xsl:if>
 
     <!-- Titel in Bandsätzen und Aufsätzen (für die Anzeige usw.) -->
-    <xsl:if test="pica:datafield[@tag = '027D']">
+    <xsl:if test="$recordType != 's' and pica:datafield[@tag = '027D']">
       <xsl:call-template name="make-titleInfo">
         <xsl:with-param name="titleField" select="pica:datafield[@tag = '027D']"/>
         <xsl:with-param name="titleType">alternative</xsl:with-param>
@@ -280,6 +280,34 @@
         <xsl:with-param name="titleType">abbreviated</xsl:with-param>
       </xsl:call-template>
     </xsl:if>
+
+    <!-- Enthaltende Zeitschrift -->
+    <xsl:if test="$recordType = 's' and pica:datafield[@tag = '027D']">
+      <mods:relatedItem type="host">
+        <mods:titleInfo>
+          <mods:title>
+            <xsl:value-of select="pica:datafield[@tag = '027D']/pica:subfield[@code = 'a']"/>
+          </mods:title>
+        </mods:titleInfo>
+        <xsl:for-each select="pica:datafield[@tag = '027D']/pica:subfield[@code = '0']">
+          <mods:identifier type="issn"><xsl:value-of select="."/></mods:identifier>
+        </xsl:for-each>
+        <xsl:if test="pica:datafield[@tag = '027D']/pica:subfield[@code = 'p']">
+          <mods:originInfo>
+            <xsl:for-each select="pica:datafield[@tag = '027D']/pica:subfield[@code = 'p']">
+              <xsl:if test="not(preceding::pica:subfield[@code = 'p'][parent::pica:datafield[@tag = '027D']] = current())">
+                <mods:place>
+                  <mods:placeTerm type="text">
+                    <xsl:value-of select="."/>
+                  </mods:placeTerm>
+                </mods:place>
+              </xsl:if>
+            </xsl:for-each>
+          </mods:originInfo>
+        </xsl:if>
+      </mods:relatedItem>
+    </xsl:if>
+    
   </xsl:template>
 
   <xsl:template name="make-titleInfo">
