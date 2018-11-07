@@ -1,7 +1,7 @@
 # Administrative Metadaten
 #
 # Autor: David Maus <maus@hab.de>
-# Timestamp: <2018-11-07 11:15:49 maus>
+# Timestamp: <2018-11-07 11:33:59 maus>
 #
 
 namespace dct = "http://purl.org/dc/terms/"
@@ -31,7 +31,7 @@ start = element rdf:Description {
     element dct:LicenseDocument {
        model.Entity
     }
- }
+ }?
  & element marcrel:fnd {
     element dct:Agent {
        model.Entity
