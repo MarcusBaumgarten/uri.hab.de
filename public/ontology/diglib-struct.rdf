@@ -19,7 +19,7 @@
         <skos:prefLabel>CC0 1.0 Universal</skos:prefLabel>
       </dct:LicenseDocument>
     </dct:license>
-    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-01</dct:modified>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-11-12</dct:modified>
     <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-01-31</dct:created>
   </rdf:Description>
 
@@ -179,4 +179,7 @@
   <rdfs:Class rdf:about="http://uri.hab.de/ontology/diglib-struct#Monograph">
     <rdfs:label xml:lang="de">Werk</rdfs:label>
   </rdfs:Class>
+  <rdfs:Property rdf:about="http://uri.hab.de/ontology/diglib-struct#P0014">
+    <rdfs:label xml:lang="de">Name des Digitalisierungsprojekts</rdfs:label>
+  </rdfs:Property>
 </rdf:RDF>
