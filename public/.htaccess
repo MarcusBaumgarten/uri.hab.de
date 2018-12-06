@@ -3,3 +3,6 @@ RewriteBase /
 
 RewriteCond e:/hosting/development/2016/uri.hab.de/public/$1.rdf -f
 RewriteRule ^(.*)$ $1.rdf [R=303]
+
+RewriteCond e:/hosting/development/2016/uri.hab.de/public/$1.rnc -f
+RewriteRule ^(.*)$ $1.rnc [R=303]
