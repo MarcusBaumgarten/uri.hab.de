@@ -1,12 +1,27 @@
 # RelaxNG für deskriptive Metadaten von Objektstrukturen
 #
 # Autor: David Maus <maus@hab.de>
-# Timestamp: <2018-09-21 12:13:22 maus>
+# Timestamp: <2018-12-17 09:14:13 maus>
 #
 
 namespace diglib = "http://uri.hab.de/ontology/diglib-struct#"
+namespace exif = "https://www.w3.org/2003/12/exif/ns#"
 namespace rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 
 start = element rdf:Description {
-   element diglib:* { text }+
+   ( model.logical | model.physical )
 }
+
+model.logical =
+   element diglib:* { text }+
+
+model.physical =
+   element exif:width {
+      attribute rdf:datatype { xsd:anyURI }?
+    & text
+   }
+ & element exif:height {
+          attribute rdf:datatype { xsd:anyURI }?
+  & text
+ }
+ 
