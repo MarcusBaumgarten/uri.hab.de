@@ -72,7 +72,7 @@
     </dc:date>
   </xsl:template>
 
-  <xsl:template match="mods:physicalDescription | mods:extent">
+  <xsl:template match="mods:extent">
     <dc:format>
       <xsl:value-of select="."/>
     </dc:format>
