@@ -1,13 +1,18 @@
 # Wiederverwendbare Definition von Eigenschaften aus Dublin Core Qualified
 #
 # Autor: David Maus <maus@hab.de>
-# Timestamp: <2019-01-16 12:17:44 maus>
+# Timestamp: <2019-01-16 12:22:25 maus>
 #
 
 namespace dct = "http://purl.org/dc/terms/"
 namespace rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 namespace owl = "http://www.w3.org/2002/07/owl#"
 namespace skos = "http://www.w3.org/2004/02/skos/core#"
+
+property.identifier =
+   element dct:identifier {
+      model.rdfLiteral
+   }
 
 property.license =
    element dct:license {
@@ -50,3 +55,7 @@ model.externalEntity =
       attribute rdf:resource { xsd:anyURI }
    }*
  & property.label
+
+model.rdfLiteral =
+   attribute rdf:datatype { xsd:anyURI }?
+ & text
