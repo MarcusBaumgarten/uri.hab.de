@@ -1,7 +1,7 @@
 # Wiederverwendbare Definition von Eigenschaften aus Dublin Core Qualified
 #
 # Autor: David Maus <maus@hab.de>
-# Timestamp: <2019-01-16 12:29:00 maus>
+# Timestamp: <2019-01-16 12:29:59 maus>
 #
 
 namespace dct = "http://purl.org/dc/terms/"
@@ -45,9 +45,11 @@ property.rightsHolder =
    }
 
 entity.Agent =
-   element dct:Agent {
-      model.Entity
-   }
+   (
+      element dct:Agent { model.Entity }
+    | element foaf:Person { model.Entity }
+    | element foaf:Organization { model.Entity }
+   )
 
 property.label =
    element skos:prefLabel {
