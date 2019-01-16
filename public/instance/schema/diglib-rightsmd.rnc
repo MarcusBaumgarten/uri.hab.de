@@ -1,7 +1,7 @@
 # Administrative Metadaten
 #
 # Autor: David Maus <maus@hab.de>
-# Timestamp: <2018-11-07 11:33:59 maus>
+# Timestamp: <2019-01-16 12:17:50 maus>
 #
 
 namespace dct = "http://purl.org/dc/terms/"
@@ -11,42 +11,18 @@ namespace owl = "http://www.w3.org/2002/07/owl#"
 namespace rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 namespace skos = "http://www.w3.org/2004/02/skos/core#"
 
+include "shared-dc.rnc"
+
 start = element rdf:Description {
    element dct:relation {
       element foaf:Project {
          model.Entity
       }
    }?
- & element dct:rightsHolder {
-    element dct:Agent {
-       model.Entity
-    }
- }?
- & element dct:rights {
-    element dct:RightsStatement {
-       model.Entity
-    }
- }?
- & element dct:license {
-    element dct:LicenseDocument {
-       model.Entity
-    }
- }?
+ & property.rightsHolder?
+ & property.rights?
+ & property.license?
  & element marcrel:fnd {
-    element dct:Agent {
-       model.Entity
-    }
+    entity.Agent
  }*
 }
-
-model.Entity =
-   element owl:sameAs {
-      attribute rdf:resource { xsd:anyURI }
-   }*
- & element foaf:homepage {
-    attribute rdf:resource { xsd:anyURI }
- }?
- & element skos:prefLabel {
-    attribute xml:lang { xsd:language }?
-  & text
- }+
