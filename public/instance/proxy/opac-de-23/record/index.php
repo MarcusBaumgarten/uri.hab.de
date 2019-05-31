@@ -24,13 +24,22 @@ function terminate (Request $request, Response $response) {
 }
 
 function load ($ident) {
-    $content = @file_get_contents(sprintf(PSI_TEMPLATE, $ident));
+    $context = stream_context_create(['http' => ['timeout' => 0.5]]);
+    $content = @file_get_contents(sprintf(PSI_TEMPLATE, $ident), false, $context);
     if ($content) {
         $content = normalizer_normalize($content);
-        $reader = new PicaNormReader();
-        $reader->open($content);
-        return $reader->read();
+    } else {
+        $context = <<<CONTENT
+<record xmlns="info:srw/schema/5/picaXML-v1.0">
+  <field tag="003@">
+    <subfield code="0">$ident</subfield>
+  </field>
+</record>
+CONTENT;
     }
+    $reader = new PicaNormReader();
+    $reader->open($content);
+    return $reader->read();
 }
 
 function transform ($sourceUri, $templateUri) {
