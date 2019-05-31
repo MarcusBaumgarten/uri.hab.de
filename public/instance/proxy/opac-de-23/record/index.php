@@ -12,6 +12,8 @@ use HAB\Pica\Record\Record;
 use HAB\Pica\Reader\PicaNormReader;
 use HAB\Pica\Writer\PicaXmlWriter;
 
+HAB\Pica\Record\Subfield::$validSubfieldCodePattern = '/^.$/Di';
+
 define('PSI_TEMPLATE', 'http://opac.lbs-braunschweig.gbv.de/DB=2/PLAIN=Y/CHARSET=UTF8/PLAINTTLCHARSET=UTF8/PPN?PPN=%s');
 define('PICA_TEMPLATE', 'http://uri.hab.de/instance/proxy/opac-de-23/record/%s.xml');
 define('MODS_TEMPLATE', 'http://uri.hab.de/instance/proxy/opac-de-23/record/%s.mods');
