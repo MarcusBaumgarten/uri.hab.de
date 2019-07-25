@@ -1,7 +1,7 @@
 # Administrative Metadaten
 #
 # Autor: David Maus <maus@hab.de>
-# Timestamp: <2019-01-16 12:19:33 maus>
+# Timestamp: <2019-01-18 15:43:02 maus>
 #
 
 namespace dct = "http://purl.org/dc/terms/"
@@ -10,7 +10,9 @@ namespace marcrel = "http://id.loc.gov/vocabulary/relators/"
 namespace owl = "http://www.w3.org/2002/07/owl#"
 namespace rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 
-include "shared-dc.rnc"
+include "https://raw.githubusercontent.com/dmj/bausteine/master/lib/shared-dc.rnc" {
+   entity.Agent |= ( element foaf:Organization { model.Entity } | element foaf:Person { model.Entity } )
+}
 
 start = element rdf:Description {
    element dct:relation {

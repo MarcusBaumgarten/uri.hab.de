@@ -1,7 +1,7 @@
-# Deskriptive Metadaten
+# Deskriptive Metadaten / #PolonskyGerman
 #
 # Autor: David Maus <maus@hab.de>
-# Timestamp: <2019-01-16 12:22:36 maus>
+# Timestamp: <2019-01-21 13:48:05 maus>
 #
 
 namespace rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -14,7 +14,13 @@ start =
     & optionalMetadata
    }
 
-requiredMetadata =
-   property.identifier+
+requiredMetadata = empty
 
-optionalMetadata = empty
+optionalMetadata =
+   property.title?
+ & property.creator*
+ & property.contributor*
+ & property.language*
+ & property.spatial*
+ & property.date*
+ & property.description*
