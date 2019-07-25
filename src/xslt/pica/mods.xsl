@@ -436,14 +436,14 @@
         </xsl:choose>
       </xsl:if>
 
-      <xsl:if test="pica:subfield[@code = 'a']">
+      <xsl:if test="pica:subfield[@code = ('a', 'A')][1]">
         <mods:namePart type="family">
-          <xsl:value-of select="pica:subfield[@code = 'a']"/>
+          <xsl:value-of select="pica:subfield[@code = ('a', 'A')][1]"/>
         </mods:namePart>
       </xsl:if>
-      <xsl:if test="pica:subfield[@code = 'd']">
+      <xsl:if test="pica:subfield[@code = ('d', 'D')][1]">
         <mods:namePart type="given">
-          <xsl:value-of select="pica:subfield[@code = 'd']"/>
+          <xsl:value-of select="pica:subfield[@code = ('d', 'D')][1]"/>
         </mods:namePart>
       </xsl:if>
       <xsl:if test="pica:subfield[@code = 'h']">
@@ -461,11 +461,11 @@
           <xsl:when test="pica:subfield[@code = '8']">
             <xsl:value-of select="pica:subfield[@code = '8']"/>
           </xsl:when>
-          <xsl:when test="pica:subfield[@code = 'a'] and pica:subfield[@code = 'd']">
-            <xsl:value-of select="concat(pica:subfield[@code = 'd'], ', ', pica:subfield[@code = 'a'])"/>
+          <xsl:when test="pica:subfield[@code = ('a', 'A')] and pica:subfield[@code = ('d', 'D')]">
+            <xsl:value-of select="concat(pica:subfield[@code = ('d', 'D')][1], ', ', pica:subfield[@code = ('a', 'A')][1])"/>
           </xsl:when>
-          <xsl:when test="pica:subfield[@code = 'a'] or pica:subfield[@code = 'd']">
-            <xsl:value-of select="concat(pica:subfield[@code = 'a'], pica:subfield[@code = 'd'])"/>
+          <xsl:when test="pica:subfield[@code = ('a', 'A')] or pica:subfield[@code = ('d', 'D')]">
+            <xsl:value-of select="concat(pica:subfield[@code = ('a', 'A')][1], pica:subfield[@code = ('d', 'D')][1])"/>
           </xsl:when>
         </xsl:choose>
       </mods:displayForm>
