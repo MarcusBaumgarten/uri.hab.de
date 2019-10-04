@@ -307,7 +307,7 @@
         </xsl:if>
       </mods:relatedItem>
     </xsl:if>
-    
+
   </xsl:template>
 
   <xsl:template name="make-titleInfo">
@@ -436,16 +436,40 @@
         </xsl:choose>
       </xsl:if>
 
-      <xsl:if test="pica:subfield[@code = ('a', 'A')][1]">
+      <xsl:variable name="familyName">
+        <xsl:choose>
+          <xsl:when test="pica:subfield[@code = 'a']">
+            <xsl:value-of select="pica:subfield[@code = 'a'][1]"/>
+          </xsl:when>
+          <xsl:when test="pica:subfield[@code = 'A']">
+            <xsl:value-of select="pica:subfield[@code = 'A'][1]"/>
+          </xsl:when>
+        </xsl:choose>
+      </xsl:variable>
+
+      <xsl:variable name="givenName">
+        <xsl:choose>
+          <xsl:when test="pica:subfield[@code = 'd']">
+            <xsl:value-of select="pica:subfield[@code = 'd'][1]"/>
+          </xsl:when>
+          <xsl:when test="pica:subfield[@code = 'D']">
+            <xsl:value-of select="pica:subfield[@code = 'D'][1]"/>
+          </xsl:when>
+        </xsl:choose>
+      </xsl:variable>
+
+      <xsl:if test="normalize-space($familyName)">
         <mods:namePart type="family">
-          <xsl:value-of select="pica:subfield[@code = ('a', 'A')][1]"/>
+          <xsl:value-of select="normalize-space($familyName)"/>
         </mods:namePart>
       </xsl:if>
-      <xsl:if test="pica:subfield[@code = ('d', 'D')][1]">
+
+      <xsl:if test="normalize-space($givenName)">
         <mods:namePart type="given">
-          <xsl:value-of select="pica:subfield[@code = ('d', 'D')][1]"/>
+          <xsl:value-of select="normalize-space($givenName)"/>
         </mods:namePart>
       </xsl:if>
+
       <xsl:if test="pica:subfield[@code = 'h']">
         <mods:namePart type="date">
           <xsl:value-of select="pica:subfield[@code = 'h']"/>
@@ -461,11 +485,11 @@
           <xsl:when test="pica:subfield[@code = '8']">
             <xsl:value-of select="pica:subfield[@code = '8']"/>
           </xsl:when>
-          <xsl:when test="pica:subfield[@code = ('a', 'A')] and pica:subfield[@code = ('d', 'D')]">
-            <xsl:value-of select="concat(pica:subfield[@code = ('d', 'D')][1], ', ', pica:subfield[@code = ('a', 'A')][1])"/>
+          <xsl:when test="normalize-space($familyName) and normalize-space($givenName)">
+            <xsl:value-of select="concat($familyName, ', ', $givenName)"/>
           </xsl:when>
-          <xsl:when test="pica:subfield[@code = ('a', 'A')] or pica:subfield[@code = ('d', 'D')]">
-            <xsl:value-of select="concat(pica:subfield[@code = ('a', 'A')][1], pica:subfield[@code = ('d', 'D')][1])"/>
+          <xsl:when test="normalize-space($familyName) or normalize-space($givenName)">
+            <xsl:value-of select="concat($familyName, $givenName)"/>
           </xsl:when>
         </xsl:choose>
       </mods:displayForm>
