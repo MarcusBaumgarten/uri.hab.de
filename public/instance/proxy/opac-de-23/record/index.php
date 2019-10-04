@@ -31,7 +31,7 @@ function load ($ident) {
     if ($content) {
         $content = normalizer_normalize($content);
     } else {
-        $context = <<<CONTENT
+        $content = <<<CONTENT
 <record xmlns="info:srw/schema/5/picaXML-v1.0">
   <field tag="003@">
     <subfield code="0">$ident</subfield>
